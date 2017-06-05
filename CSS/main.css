@@ -46,9 +46,9 @@ header {
   color: white;
 /*  color: #FC5F5F;*/
 }
+
 #headerDiv {
   height: 95vh;
-  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
