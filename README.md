@@ -14,7 +14,7 @@ git clone https://github.com/malkam03/malkam03.github.io.git
 
 By know the project only needs a text editor.
 
-I use atom, to install it on debian based linux distros just [download it](https://atom.io/download/deb) and type on the terminal:
+I use atom, to install it on debian based linux distros just [download](https://atom.io/download/deb) the package and type on the terminal:
 ```
 sudo dpkg -i atom-amd64.deb
 ```
