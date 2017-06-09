@@ -5,7 +5,10 @@ Personal website of mine, cv and info blog about hardware and coding.
 
 ## Getting Started
 
-Clone the repository nd start to code.
+Clone the repository and start to code.
+```
+git clone https://github.com/malkam03/malkam03.github.io.git
+```
 
 ### Prerequisites
 
