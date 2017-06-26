@@ -112,6 +112,7 @@ body {
 }
 
 
+
 #profilePic {
   border-radius: 50%;
   min-height: 200px;
@@ -125,6 +126,7 @@ body {
 }
 
 #Activities {
+  color: white;
 }
 
 #Projects {
@@ -132,6 +134,58 @@ body {
 
 
 #Skills {
+}
+
+.skillEntry {
+  width: auto;
+  margin-bottom: 15px;
+}
+.skillText {
+  width: 70%;
+}
+
+.rating {
+  float:right;
+}
+
+.skillRating span {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+.skillRating span:hover{
+  width: 21px;
+  height: 21px;
+}
+
+.fillSkill {
+  background: url('../images/1up.png');
+  margin: 3 0 3 5;
+}
+
+.noSkill {
+  background: url('../images/1upG.png');
+  margin: 3 0 3 5;
+}
+
+.halfSkill {
+  background: url('../images/1upHG.png');
+  margin: 3 0 3 5;
+}
+
+.fillSkill:hover {
+  background: url('../images/1upH.png');
+  margin: 3 0 3 5;
+}
+
+.noSkill:hover {
+  background: url('../images/1upGH.png');
+  margin: 3 0 3 5;
+}
+
+.halfSkill:hover {
+  background: url('../images/1upHHG.png');
+  margin: 3 0 3 5;
 }
 
 footer {
@@ -161,7 +215,7 @@ footer {
 }
 
 .primaryBack {
-  width: 100 %;
+  width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -224,8 +278,16 @@ footer {
 
 .colhalf {
   margin: 1px;
-  width: 49%;
+  width: 46%;
   display: inline-block;
+}
+
+#left {
+  margin-right: 3%;
+}
+
+#right {
+  margin-left: 3%;
 }
 
 .col3-4 {
@@ -260,6 +322,7 @@ footer {
 
 .row {
   display: inline-block;
+  width: 100%;
   margin-top: 1%;
 }
 
