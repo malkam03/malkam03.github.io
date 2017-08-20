@@ -2,6 +2,7 @@
   --mainColor: #D64550;
   --secondaryColor: #DBDAD6;
   --tertiaryColor: #DBDAD6;
+  --mainBackColor: white;
   --regularTextColor: grey;
 }
 
@@ -31,6 +32,8 @@
 #navigationBar ul li a:hover {
   background-color: #111;
 }
+
+
 
 header {
   background: url("../images/electronics1.jpg") no-repeat no-repeat center center;
@@ -66,48 +69,65 @@ header {
   font-family: 'Open Sans';
 }
 
-#sideMenu {
+.sideMenu {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 10vw;
+  top: 10vh;
+  z-index: 3;
   float: right;
-  position: relative;
-  margin-right: 50px;
-  margin-top: 50px;
+  font-family: 'Open Sans';
+  margin-left: -20vw;
 }
 
-#sideMenu ul {
+#sideMenuHome {
+      position: absolute;
+    bottom: 0;
+    top: unset;
+    right: 0;
+    margin: 0;
+    height: 66px;
+}
+
+.sideMenu ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  min-width: 100px;
+  min-width: 120px;
   max-width: 10%;
-  overflow: auto;
+  overflow: hidden;
 }
 
-#sideMenu ul li {
+.sideMenu ul li {
   float: center-block;
 }
 
-#sideMenu ul li a {
-  display: block;
+.sideMenu ul li a {
   color: white;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 8px 16px;
+  height: 50px;
   text-decoration: none;
+  background-color: black;
 }
 
-#sideMenu ul li a:hover {
-  background-color: #111;
+.sideMenu ul li a:hover {
+  background-color: var(--mainColor);
 }
+
 
 body {
-  background-color: white;
+  background-color: var(--secondaryColor);
   font-family: 'Open Sans', regular;
   margin:0;
   color: var(--regularTextColor);
+  overflow-x: hidden;
 }
 
 #Profile {
-  display: block;
-  text-align: center;
 }
 
 .horizontalDiv {
@@ -126,24 +146,10 @@ body {
   border: 10px solid var(--secondaryColor);
 }
 
-#Experiences {
-}
-
-#Activities {
-}
-
-#Projects {
-}
-
-#Skills {
-}
-
 #projectGallery {
-  width: 80vw;
+  width: 100%;
   margin: 0 auto;
   padding: 5px;
-  background: --secondaryColor;
-  box-shadow: 0 1px 2px --mainColor;
 }
 
 #projectGallery div:hover{
@@ -154,14 +160,14 @@ body {
   position: relative;
   float: left;
   padding: 5px;
-  width: 25.5vw;
+  width: 20vw;
 }
 
 .projectImage {
   border-radius: 50%;
   height: auto;
   display: block;
-  width: 25.5vw;
+  width: 20vw;
   transition: .5s ease;
   backface-visibility: hidden;
 }
@@ -195,7 +201,7 @@ body {
 }
 
 .projectData div div {
-  margin-right: 5%;
+  margin-right: 30%;
   text-align: right;
 }
 
@@ -209,18 +215,13 @@ body {
   color: white;
 }
 
-.
-
 .skillEntry {
-  width: auto;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .skillEntry:hover {
-  transform: scaleY(1.2);
-  transition: .2s transform;
-  background-color: rgb(242,173,173);
-  background-color: rgba(242,173,173,1);
+  background-color: rgb(219, 218, 214);
+  background-color: rgba(219, 218, 214,1);
 }
 .skillText {
   width: 70%;
@@ -238,39 +239,20 @@ body {
   vertical-align: middle;
 }
 
-.skillRating span:hover{
-  width: 21px;
-  height: 21px;
+.skillEntry:hover .skillRating span{
+  margin-left: 2px;
 }
 
 .fillSkill {
   background: url('../images/1up.png');
-  margin: 3 0 3 5;
 }
 
 .noSkill {
   background: url('../images/1upG.png');
-  margin: 3 0 3 5;
 }
 
 .halfSkill {
   background: url('../images/1upHG.png');
-  margin: 3 0 3 5;
-}
-
-.fillSkill:hover {
-  background: url('../images/1upH.png');
-  margin: 3 0 3 5;
-}
-
-.noSkill:hover {
-  background: url('../images/1upGH.png');
-  margin: 3 0 3 5;
-}
-
-.halfSkill:hover {
-  background: url('../images/1upHHG.png');
-  margin: 3 0 3 5;
 }
 
 footer {
@@ -293,10 +275,11 @@ footer {
 }
 
 .dataBlock {
-    width: 80%;
+    width: 75%;
     min-height: 50vh;
     margin-bottom: 2%;
     margin-top: 2%;
+    display: block;
 }
 
 
@@ -308,23 +291,9 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: justify;
+  background: var(--mainBackColor);
 }
 
-.primaryBackA {
-  width: 100 %;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
-  background: url('../images/back1.1.png'), url('../images/back1.2.png'), url('../images/back1.3.png');
-  position: relative, relative, relative;
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-attachment: fixed, fixed, fixed;
-  height: 100vh;
-  background-size: cover;
-}
 
 .secondaryBack {
     width: 100%;
@@ -334,7 +303,6 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: justify;
-    background-color: var(--secondaryColor);
 }
 
 .headers{
@@ -360,6 +328,10 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: justify;
+}
+
+.columns div {
+  width: 23vw;
 }
 
 .colhalf {
@@ -416,7 +388,7 @@ footer {
 *Contact Part
 */
 #Contact {
-  min-width: 325px;
+  min-width: 100vw;
   max-height: 200px;
   text-align: center;
   color: #b3b3b3;
@@ -426,6 +398,9 @@ footer {
 #Contact h1{
   font-family: "Press Start 2P", cursive;
   color: white;
+}
+#Contact hr{
+  width: 70vw;
 }
 
 #socialIcons {
@@ -492,8 +467,68 @@ footer {
   background: url('../images/emailh.png');
 }
 
+
+
 .img-circle {
   border-radius: 50%;
   margin-left: 5%;
   margin-right: 5%;
+}
+
+#Activities #slider h2 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 30px;
+  padding-top:230px;
+  color: #fff;
+  text-align: center;
+  z-index: 3;
+  position: relative;
+}
+
+#Activities #slider p {
+  font-family: "Open Sans";
+  color: #fff;
+  text-align: center;
+  z-index: 3;
+  position: relative;
+}
+
+#slider
+{
+  height: 600px;
+  background-image:url('../images/Activity-1.jpg');
+  background-size: cover;
+  -webkit-transition: background 1s ;
+}
+
+#slider:after
+{
+  position: relative;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 600px;
+  z-index:1;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+}
+
+.icon
+{
+  font-size: 50px;
+  color: #fff;
+  position: relative;
+  z-index: 3;
+}
+
+#ileft
+{
+  float: left;
+  margin: 320px 30px;
+}
+
+#iright
+{
+  float: right;
+  margin: 0 30px;
 }
