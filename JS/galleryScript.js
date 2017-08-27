@@ -1,4 +1,4 @@
-var imgadr= ['images/Activity-1.jpg','images/Activity-2.jpg','images/Activity-3.jpg','images/Activity-4.jpg','images/Activity-5.jpg'];
+var imgadr= ['images/activities/Activity-1.jpg','images/activities/Activity-2.jpg','images/activities/Activity-3.jpg','images/activities/Activity-4.jpg','images/activities/Activity-5.jpg'];
 var headArray= ['First Heading','Second Heading', 'Third Heading', '4th Heading','Last heading'];
 var paraArray= ['First paragraph is awesome!',
 				'Second paragraph goes here!', 

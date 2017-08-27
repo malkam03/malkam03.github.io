@@ -127,7 +127,8 @@ body {
   overflow-x: hidden;
 }
 
-#Profile {
+#Experiences a {
+  color: inherit;
 }
 
 .horizontalDiv {
@@ -244,15 +245,15 @@ body {
 }
 
 .fillSkill {
-  background: url('../images/1up.png');
+  background: url('../images/icons/1up.png');
 }
 
 .noSkill {
-  background: url('../images/1upG.png');
+  background: url('../images/icons/1upG.png');
 }
 
 .halfSkill {
-  background: url('../images/1upHG.png');
+  background: url('../images/icons/1upHG.png');
 }
 
 footer {
@@ -375,7 +376,11 @@ footer {
 }
 
 .place {
-  color: var(--tertiaryColor);
+  color: var(--mainColor);
+  display: inherit;
+}
+.place img {
+  margin-right: 10px;
 }
 
 .row {
@@ -434,7 +439,7 @@ footer {
 #twitterIcon,
 #facebookIcon,
 #linkedInIcon {
-  background: url('../images/social-icons.png') -74px 0px;
+  background: url('../images/icons/social-icons.png') -74px 0px;
 }
 
 #twitterIcon:hover,
@@ -452,19 +457,19 @@ footer {
 }
 
 #gitHubIcon {
-  background: url('../images/github.png');
+  background: url('../images/icons/github.png');
 }
 
 #gitHubIcon:hover {
-  background: url('../images/githubh.png');
+  background: url('../images/icons/githubh.png');
 }
 
 #emailIcon {
-  background: url('../images/email.png');
+  background: url('../images/icons/email.png');
 }
 
 #emailIcon:hover {
-  background: url('../images/emailh.png');
+  background: url('../images/icons/emailh.png');
 }
 
 
@@ -496,7 +501,7 @@ footer {
 #slider
 {
   height: 600px;
-  background-image:url('../images/Activity-1.jpg');
+  background-image:url('../images/activities/Activity-1.jpg');
   background-size: cover;
   -webkit-transition: background 1s ;
 }
