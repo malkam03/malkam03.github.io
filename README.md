@@ -1,8 +1,7 @@
 
 # malcolmdavis.xyz
-![malkam03](images/malkam03.png)  
+![pageHome](images/pageHome.png)
 Personal website of mine, cv and info blog about hardware and coding.
-
 ## Getting Started
 
 Clone the repository and start to code.
