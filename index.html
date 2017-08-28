@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700|Press+Start+2P">
     <script type="text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" ></script>
+    <script src="JS/gAnalytics.js"></script>
     <script src="JS/menuScript.js"></script>
     <script type="text/javascript" src="JS/galleryScript.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
@@ -18,7 +19,10 @@
       <div id="navigationBar">
         <ul>
           <li>
-            <a href="#">Blog</a>
+            <a href="UC.html">Blog</a>
+          </li>
+          <li>
+          	<a href="Malcolm-Davis-Resume.pdf" download>Resume</a>
           </li>
         </ul>
       </div>
@@ -53,10 +57,10 @@
             <a href="#Experiences">Experiences</a>
           </li>
           <li>
-            <a href="#Projects">Projects</a>
+            <a href="#Activities">Activities</a>
           </li>
           <li>
-            <a href="#Activities">Activities</a>
+            <a href="#Projects">Projects</a>
           </li>
           <li>
             <a href="#Skills">Skills</a>
@@ -77,7 +81,7 @@
             <div class="columns">
               <div>
                 <h2 class="headers">About Me</h2>
-                <p>Born in a entrepreneur family, raised to be the tech guy of the familly business. So I take some courses on computer maintenance, then I got accepted on the Costa Rica Institute of Tecnology and discover my love for prototyping projects when I starded to participate on competitions. Enjoy working on back end and optimization of the project's software/hardware. </p>
+                <p>Born in an  entrepreneurial family, raised to be the tech guy of the familly business. So I take some courses on computer maintenance, then I got accepted on the Costa Rica Institute of Tecnology and discover my passion for prototyping projects when I starded to participate on development competitions. Enjoy the most working on back end and optimization of the project's software/hardware. </p>
                 
               </div>
               <div class="img-circle">
@@ -112,7 +116,7 @@
               </div>
               <div class="col3-4">
                 <strong>Bachelor's Degree - Computer Engineering </strong>
-                <p>Coursework included, among others, Algorithms, Data Structures, Compilers, Databases, Circuit Analysis in AC and DC, Computer Architecture, a wide range of maths and sciences courses and Entrepreneurship.</p>
+                <p>Coursework included, among others, Image Signal Analysis, Computational Molecular Biology, Algorithms, Data Structures, Compilers, Databases, Circuit Analysis in AC and DC, Computer Architecture, a wide range of maths and sciences courses and Entrepreneurship.</p>
                 <div class=place><img src="images/icons/location.png">Cartago, Costa Rica</div>
               </div>
             </div>
@@ -126,7 +130,7 @@
               </div>
               <div class="col3-4">
                 <strong>Software Developer</strong>
-                <p>Started the development of a informative app for the JOCICI 2017 congress. Bring back to live a educational game developed by an early team. </p>
+                <p>Started the development of an informative app for the JOCICI 2017 congress. Bring back to life an educational game developed by an early team. </p>
                 <div class=place><img src="images/icons/location.png">Cartago, Costa Rica</div>
               </div>
             </div>
@@ -137,7 +141,7 @@
               </div>
               <div class="col3-4">
                 <strong>Vice Chair Computer Society </strong>
-                <p>Estabished, with others, the Computer Society of the IEEE TEC, Costa Rica Branch. Promote the Society imparting some parallel programming Workshops. Help the organizer committee to make IEEEXtreme 11.0 posible in CR. </p>
+                <p>Estabished, with others, the Computer Society of the IEEE, TEC Costa Rica Branch. Promote the Society imparting some parallel programming Workshops. Help the organizer committee to make IEEEXtreme 11.0 posible in CR. </p>
                 <div class=place><img src="images/icons/location.png">Cartago, Costa Rica</div>
               </div>
             </div>
@@ -148,7 +152,7 @@
               </div>
               <div class="col3-4">
                 <strong>Co-founder and CTO </strong>
-                <p>Co-founded Nabit, a research and development company that creates technology that eases the work of people who are making efforts to help the environment in different ways. Lead the Software and Hardware departments to research and develop a way to make wildlife investigation cameras meets the unmet needs of wildlife researchers, at half the price. Right now we’re developing a prototype.</p>
+                <p>Co-founded Nabit, a research and development company that creates technology that eases the work of people who are making efforts to help the environment in different ways. Lead the Software and Hardware departments to research and develop a way to make wildlife investigation cameras meet the unmet needs of wildlife researchers, at half the price. Right now we’re developing a prototype.</p>
                 <div class=place><img src="images/icons/location.png">Cartago, Costa Rica</div>
               </div>
             </div>
@@ -159,13 +163,29 @@
               </div>
               <div class="col3-4">
                 <strong> Physics Course Assistant </strong>
-                <p>Developed a mobile assignment grading system, that halved the revision and report time, also constructs feedback of the average behavior of the students with auto generated statistics.</p>
+                <p>Developed a mobile assignment grading system, that halved the revision and report time, also build feedback of the average behavior of the students with auto generated statistics.</p>
                 <div class=place><img src="images/icons/location.png">Cartago, Costa Rica</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="primaryBack" id="Projects">
+        <div class="primaryBack" id="Activities">
+          <div class="dataBlock">
+            <h1 class="headers">Activities</h1>
+            <p class="cite">
+                "Only those who attempt the absurd can achieve the impossible."<br>
+                -Albert Einstein</p>
+            <hr class="horizontalDiv">
+            <div id="slider">
+              <div class="icon" id="ileft"><i class="fa fa-angle-left" onclick="prev()"></i></div>
+              <div class="icon" id="iright"><i class="fa fa-angle-right" onclick="next()"></i></div>
+              <h2 class="headerTitle" id="sliderHeader">NASA SPACE APPS CHALLENGE</h2>
+              <p id="sliderPara">Mentored the 16 Costa Rican teams on subjects like software and hardware prototyping and business. This  is an international NASA organized hackathon that occurs over 48 hours in cities around the world, to address challenges we face on Earth and in space.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="secondaryBack" id="Projects">
           <div class="dataBlock">
             <h1 class="headers">Projects</h1>
             <p class="cite">"It is a poor workman who blames his tools - the good man gets on with the job, given what he's got, and gets the best answer he can."<br>
@@ -175,92 +195,59 @@
             <div id="projectGallery">
 
     	        <div class="projectDataContainer">
-                  <img class="projectImage" src="images/prj1.jpg" />
+                  <img class="projectImage" src="images/projects/project-1.jpg" />
                   <div class="projectData">
                   	<div>
-                  		<h3 class="projectHeader">Title</h3>
-                  		<p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
+                  		<h3 class="projectHeader">Pianoduino</h3>
+                  		<p>A 61 key MIDI keyboard project with Arduino and some parts of a broken Yamaha PSR-E303. With control knobs, buttons, LCD and resistive panel. </p>
                   		<div>
-                  			<a class="github-button" href="https://github.com/malkam03" aria-label="Follow project on GitHub">Follow Project</a>
+                  			<a class="github-button" href="https://github.com/malkam03/Pianoduino" aria-label="Follow project on GitHub">Follow Project</a>
                   		</div>
                   	</div>
                   </div>
     	        </div>
     	        <div class="projectDataContainer">
-                  <img class="projectImage" src="images/prj1.jpg" />
+                  <img class="projectImage" src="images/projects/project-2.jpg" />
                   <div class="projectData">
                   	<div>
-                  		<h3 class=projectHeader>Title</h3>
-                  		<p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
+                  		<h3 class=projectHeader>Pencilduino</h3>
+                  		<p>A robot that interprets instructions given via a smartphone and draw in a 2d matrix.</p>
                   		<div>
-                  			<a class="github-button" href="https://github.com/malkam03" aria-label="Follow project on GitHub">Follow Project</a>
+                  			<a class="github-button" href="https://github.com/JAMS-ITCR/Pencilduino" aria-label="Follow project on GitHub">Follow Project</a>
                   		</div>
                   	</div>
                   </div>
     	        </div>
     	        <div class="projectDataContainer">
-                  <img class="projectImage" src="images/prj1.jpg" />
+                  <img class="projectImage" src="images/malkam03.png" />
                   <div class="projectData">
                   	<div>
-                  		<h3 class=projectHeader>Title</h3>
-                  		<p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
+                  		<h3 class=projectHeader>This WebPage</h3>
+                  		<p>Personal website of mine, cv and info blog about hardware and coding.</p>
                   		<div>
-                  			<a class="github-button" href="https://github.com/malkam03" aria-label="Follow project on GitHub">Follow Project</a>
+                  			<a class="github-button" href="https://github.com/malkam03/malkam03.github.io" aria-label="Follow project on GitHub">Follow Project</a>
                   		</div>
                   	</div>
                   </div>
     	        </div>
     	        <div class="projectDataContainer">
-                  <img class="projectImage" src="images/prj1.jpg" />
+                  <img class="projectImage" src="images/malkam03.png" />
                   <div class="projectData">
                   	<div>
-                  		<h3 class=projectHeader>Title</h3>
-                  		<p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
-                  		<div>
-                  			<a class="github-button" href="https://github.com/malkam03" aria-label="Follow project on GitHub">Follow Project</a>
-                  		</div>
+                  		<h3 class=projectHeader>Tutortec</h3>
+                  		<p>A blog with info-tutorials on hardware and software development subjects, is aimed mainly to students who take introductory courses on this subjects and have limmited knowledge in this areas.</p>
                   	</div>
                   </div>
     	        </div>
     	        <div class="projectDataContainer">
-                  <img class="projectImage" src="images/prj1.jpg" />
+                  <img class="projectImage" src="images/projects/project-5.jpg" />
                   <div class="projectData">
                   	<div>
-                  		<h3 class=projectHeader>Title</h3>
-                  		<p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
-                  		<div>
-                  			<a class="github-button" href="https://github.com/malkam03" aria-label="Follow project on GitHub">Follow Project</a>
-                  		</div>
+                  		<h3 class=projectHeader>PhysicsGrading</h3>
+                  		<p>A grading app for the physics courses assistance, connected with the teachers evaluation sheet to create an automatic report.</p>
                   	</div>
                   </div>
     	        </div>
-    	        <div class="projectDataContainer">
-                  <img class="projectImage" src="images/prj1.jpg" />
-                  <div class="projectData">
-                  	<div>
-                  		<h3 class=projectHeader>Title</h3>
-                  		<p>Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
-                  		<div>
-                  			<a class="github-button" href="https://github.com/malkam03" aria-label="Follow project on GitHub">Follow Project</a>
-                  		</div>
-                  	</div>
-                  </div>
-    	        </div>
-            </div>
-          </div>
-        </div>
-        <div class="secondaryBack" id="Activities">
-          <div class="dataBlock">
-            <h1 class="headers">Activities</h1>
-            <p class="cite">
-                "Only those who attempt the absurd can achieve the impossible."<br>
-                -Albert Einstein</p>
-            <hr class="horizontalDiv">
-            <div id="slider">
-              <div class="icon" id="ileft"><i class="fa fa-angle-left" onclick="prev()"></i></div>
-              <h2 class="headerTitle" id="sliderHeader">First Heading</h2>
-              <p id="sliderPara">First paragraph is awesome!</p>
-              <div class="icon" id="iright"><i class="fa fa-angle-right" onclick="next()"></i></div>
             </div>
           </div>
         </div>
@@ -274,7 +261,31 @@
             <div class="row">
               <div class="colhalf" id="left">
                 <div class="skillEntry">
-                  <span class="skillText">Skill 1</span>
+                  <span class="skillText">C/C++</span>
+                  <span class="rating">
+                    <span class="skillRating">
+                      <span class="fillSkill"></span>
+                      <span class="fillSkill"></span>
+                      <span class="fillSkill"></span>
+                      <span class="fillSkill"></span>
+                      <span class="noSkill"></span>
+                    </span>
+                  </span>
+                </div>
+                <div class="skillEntry">
+                  <span class="skillText">Python</span>
+                  <span class="rating">
+                    <span class="skillRating">
+                      <span class="fillSkill"></span>
+                      <span class="fillSkill"></span>
+                      <span class="fillSkill"></span>
+                      <span class="fillSkill"></span>
+                      <span class="halfSkill"></span>
+                    </span>
+                  </span>
+                </div>
+                <div class="skillEntry">
+                  <span class="skillText">Java</span>
                   <span class="rating">
                     <span class="skillRating">
                       <span class="fillSkill"></span>
@@ -286,31 +297,7 @@
                   </span>
                 </div>
                 <div class="skillEntry">
-                  <span class="skillText">Skill 2</span>
-                  <span class="rating">
-                    <span class="skillRating">
-                      <span class="fillSkill"></span>
-                      <span class="fillSkill"></span>
-                      <span class="noSkill"></span>
-                      <span class="noSkill"></span>
-                      <span class="noSkill"></span>
-                    </span>
-                  </span>
-                </div>
-                <div class="skillEntry">
-                  <span class="skillText">Skill 3</span>
-                  <span class="rating">
-                    <span class="skillRating">
-                      <span class="fillSkill"></span>
-                      <span class="fillSkill"></span>
-                      <span class="fillSkill"></span>
-                      <span class="halfSkill"></span>
-                      <span class="noSkill"></span>
-                    </span>
-                  </span>
-                </div>
-                <div class="skillEntry">
-                  <span class="skillText">Skill 4</span>
+                  <span class="skillText">Lisp/Haskel</span>
                   <span class="rating">
                     <span class="skillRating">
                       <span class="fillSkill"></span>
@@ -322,31 +309,7 @@
                   </span>
                 </div>
                 <div class="skillEntry">
-                  <span class="skillText">Skill 5</span>
-                  <span class="rating">
-                    <span class="skillRating">
-                      <span class="fillSkill"></span>
-                      <span class="fillSkill"></span>
-                      <span class="fillSkill"></span>
-                      <span class="fillSkill"></span>
-                      <span class="fillSkill"></span>
-                    </span>
-                  </span>
-                </div>
-                <div class="skillEntry">
-                  <span class="skillText">Skill 6</span>
-                  <span class="rating">
-                    <span class="skillRating">
-                      <span class="fillSkill"></span>
-                      <span class="fillSkill"></span>
-                      <span class="fillSkill"></span>
-                      <span class="fillSkill"></span>
-                      <span class="fillSkill"></span>
-                    </span>
-                  </span>
-                </div>
-                <div class="skillEntry">
-                  <span class="skillText">Skill 7</span>
+                  <span class="skillText">HTML</span>
                   <span class="rating">
                     <span class="skillRating">
                       <span class="fillSkill"></span>
@@ -358,7 +321,7 @@
                   </span>
                 </div>
                 <div class="skillEntry">
-                  <span class="skillText">Skill 8</span>
+                  <span class="skillText">CSS</span>
                   <span class="rating">
                     <span class="skillRating">
                       <span class="fillSkill"></span>
@@ -370,25 +333,73 @@
                   </span>
                 </div>
                 <div class="skillEntry">
-                  <span class="skillText">Skill 9</span>
+                  <span class="skillText">Java Script</span>
                   <span class="rating">
                     <span class="skillRating">
                       <span class="fillSkill"></span>
                       <span class="fillSkill"></span>
-                      <span class="fillSkill"></span>
                       <span class="halfSkill"></span>
+                      <span class="noSkill"></span>
                       <span class="noSkill"></span>
                     </span>
                   </span>
                 </div>
                 <div class="skillEntry">
-                  <span class="skillText">Skill 10</span>
+                  <span class="skillText">PHP</span>
+                  <span class="rating">
+                    <span class="skillRating">
+                      <span class="fillSkill"></span>
+                      <span class="halfSkill"></span>
+                      <span class="noSkill"></span>
+                      <span class="noSkill"></span>
+                      <span class="noSkill"></span>
+                    </span>
+                  </span>
+                </div>
+                <div class="skillEntry">
+                  <span class="skillText">MySQL</span>
+                  <span class="rating">
+                    <span class="skillRating">
+                      <span class="fillSkill"></span>
+                      <span class="fillSkill"></span>
+                      <span class="halfSkill"></span>
+                      <span class="noSkill"></span>
+                      <span class="noSkill"></span>
+                    </span>
+                  </span>
+                </div>
+                <div class="skillEntry">
+                  <span class="skillText">Wordpress</span>
                   <span class="rating">
                     <span class="skillRating">
                       <span class="fillSkill"></span>
                       <span class="fillSkill"></span>
                       <span class="fillSkill"></span>
+                      <span class="noSkill"></span>
+                      <span class="noSkill"></span>
+                    </span>
+                  </span>
+                </div>
+                <div class="skillEntry">
+                  <span class="skillText">AngularJs</span>
+                  <span class="rating">
+                    <span class="skillRating">
+                      <span class="fillSkill"></span>
                       <span class="halfSkill"></span>
+                      <span class="noSkill"></span>
+                      <span class="noSkill"></span>
+                      <span class="noSkill"></span>
+                    </span>
+                  </span>
+                </div>
+                <div class="skillEntry">
+                  <span class="skillText">Git</span>
+                  <span class="rating">
+                    <span class="skillRating">
+                      <span class="fillSkill"></span>
+                      <span class="fillSkill"></span>
+                      <span class="fillSkill"></span>
+                      <span class="fillSkill"></span>
                       <span class="noSkill"></span>
                     </span>
                   </span>
@@ -396,7 +407,31 @@
               </div>
               <div class="colhalf" id="right">
                 <div class="skillEntry">
-                  <span class="skillText">Skill 11</span>
+                  <span class="skillText">MPI(Message Passing Interface)</span>
+                  <span class="rating">
+                    <span class="skillRating">
+                      <span class="fillSkill"></span>
+                      <span class="fillSkill"></span>
+                      <span class="halfSkill"></span>
+                      <span class="noSkill"></span>
+                      <span class="noSkill"></span>
+                    </span>
+                  </span>
+                </div>
+                <div class="skillEntry">
+                  <span class="skillText">GNU-Linux</span>
+                  <span class="rating">
+                    <span class="skillRating">
+                      <span class="fillSkill"></span>
+                      <span class="fillSkill"></span>
+                      <span class="fillSkill"></span>
+                      <span class="fillSkill"></span>
+                      <span class="halfSkill"></span>
+                    </span>
+                  </span>
+                </div>
+                <div class="skillEntry">
+                  <span class="skillText">Windows</span>
                   <span class="rating">
                     <span class="skillRating">
                       <span class="fillSkill"></span>
@@ -408,7 +443,19 @@
                   </span>
                 </div>
                 <div class="skillEntry">
-                  <span class="skillText">Skill 12</span>
+                  <span class="skillText">MacOS</span>
+                  <span class="rating">
+                    <span class="skillRating">
+                      <span class="fillSkill"></span>
+                      <span class="fillSkill"></span>
+                      <span class="noSkill"></span>
+                      <span class="noSkill"></span>
+                      <span class="noSkill"></span>
+                    </span>
+                  </span>
+                </div>
+                <div class="skillEntry">
+                  <span class="skillText">Scrum</span>
                   <span class="rating">
                     <span class="skillRating">
                       <span class="fillSkill"></span>
@@ -420,19 +467,7 @@
                   </span>
                 </div>
                 <div class="skillEntry">
-                  <span class="skillText">Skill 13</span>
-                  <span class="rating">
-                    <span class="skillRating">
-                      <span class="fillSkill"></span>
-                      <span class="fillSkill"></span>
-                      <span class="fillSkill"></span>
-                      <span class="fillSkill"></span>
-                      <span class="fillSkill"></span>
-                    </span>
-                  </span>
-                </div>
-                <div class="skillEntry">
-                  <span class="skillText">Skill 14</span>
+                  <span class="skillText">Circuit Design and Analysis</span>
                   <span class="rating">
                     <span class="skillRating">
                       <span class="fillSkill"></span>
@@ -444,7 +479,43 @@
                   </span>
                 </div>
                 <div class="skillEntry">
-                  <span class="skillText">Skill 15</span>
+                  <span class="skillText">Arduino Prototyping</span>
+                  <span class="rating">
+                    <span class="skillRating">
+                      <span class="fillSkill"></span>
+                      <span class="fillSkill"></span>
+                      <span class="fillSkill"></span>
+                      <span class="fillSkill"></span>
+                      <span class="noSkill"></span>
+                    </span>
+                  </span>
+                </div>
+                <div class="skillEntry">
+                  <span class="skillText">Raspberry Pi Prototyping</span>
+                  <span class="rating">
+                    <span class="skillRating">
+                      <span class="fillSkill"></span>
+                      <span class="fillSkill"></span>
+                      <span class="fillSkill"></span>
+                      <span class="fillSkill"></span>
+                      <span class="noSkill"></span>
+                    </span>
+                  </span>
+                </div>
+                <div class="skillEntry">
+                  <span class="skillText">Problem Solving</span>
+                  <span class="rating">
+                    <span class="skillRating">
+                      <span class="fillSkill"></span>
+                      <span class="fillSkill"></span>
+                      <span class="fillSkill"></span>
+                      <span class="fillSkill"></span>
+                      <span class="noSkill"></span>
+                    </span>
+                  </span>
+                </div>
+                <div class="skillEntry">
+                  <span class="skillText">Leadership</span>
                   <span class="rating">
                     <span class="skillRating">
                       <span class="fillSkill"></span>
@@ -456,55 +527,19 @@
                   </span>
                 </div>
                 <div class="skillEntry">
-                  <span class="skillText">Skill 16</span>
+                  <span class="skillText">Multidisciplinary Team Work</span>
                   <span class="rating">
                     <span class="skillRating">
                       <span class="fillSkill"></span>
                       <span class="fillSkill"></span>
                       <span class="fillSkill"></span>
-                      <span class="halfSkill"></span>
+                      <span class="fillSkill"></span>
                       <span class="noSkill"></span>
                     </span>
                   </span>
                 </div>
                 <div class="skillEntry">
-                  <span class="skillText">Skill 17</span>
-                  <span class="rating">
-                    <span class="skillRating">
-                      <span class="fillSkill"></span>
-                      <span class="fillSkill"></span>
-                      <span class="fillSkill"></span>
-                      <span class="fillSkill"></span>
-                      <span class="fillSkill"></span>
-                    </span>
-                  </span>
-                </div>
-                <div class="skillEntry">
-                  <span class="skillText">Skill 18</span>
-                  <span class="rating">
-                    <span class="skillRating">
-                      <span class="fillSkill"></span>
-                      <span class="fillSkill"></span>
-                      <span class="fillSkill"></span>
-                      <span class="halfSkill"></span>
-                      <span class="noSkill"></span>
-                    </span>
-                  </span>
-                </div>
-                <div class="skillEntry">
-                  <span class="skillText">Skill 19</span>
-                  <span class="rating">
-                    <span class="skillRating">
-                      <span class="fillSkill"></span>
-                      <span class="fillSkill"></span>
-                      <span class="fillSkill"></span>
-                      <span class="fillSkill"></span>
-                      <span class="fillSkill"></span>
-                    </span>
-                  </span>
-                </div>
-                <div class="skillEntry">
-                  <span class="skillText">Skill 20</span>
+                  <span class="skillText">Oration</span>
                   <span class="rating">
                     <span class="skillRating">
                       <span class="fillSkill"></span>
