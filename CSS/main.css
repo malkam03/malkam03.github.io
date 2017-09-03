@@ -505,7 +505,7 @@ footer {
 
 #slider
 {
-  height: 80vh;
+  height: 600px;
   background-image:url('../images/activities/Activity-1.jpg');
   background-size: cover;
   -webkit-transition: background 1s;
