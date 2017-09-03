@@ -2,15 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700|Press+Start+2P">
     <script type="text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" ></script>
     <script src="JS/gAnalytics.js"></script>
     <script src="JS/menuScript.js"></script>
-    <script type="text/javascript" src="JS/galleryScript.js"></script>
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="JS/galleryScript.js"></script>
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
     <script type="text/javascript" src="JS/main.js"></script>
     <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="CSS/main.css">
+    <link rel='stylesheet' media='screen and (min-width: 746px)' href= "CSS/main.css">
+    <link rel='stylesheet' media='screen and (max-width: 746px)' href= "CSS/mobile.css">
     <title>Malcolm's Site</title>
      <link rel="shortcut icon" href="images/favicon.ico" />
   </head>
@@ -78,7 +80,7 @@
               <p class="cite">CE student at Costa Rica Institute of Technology, ViceChair IEEE TEC, Computer Chapter. Entrepreneur, Hardware Hacker.</p>
             </div>
             <hr class="horizontalDiv">
-            <div class="columns">
+            <div class="columns lAlign">
               <div>
                 <h2 class="headers">About Me</h2>
                 <p>Born in an  entrepreneurial family, raised to be the tech guy of the familly business. So I take some courses on computer maintenance, then I got accepted on the Costa Rica Institute of Tecnology and discover my passion for prototyping projects when I starded to participate on development competitions. Enjoy the most working on back end and optimization of the project's software/hardware. </p>
@@ -87,17 +89,17 @@
               <div class="img-circle">
                 <img  src="images/profile.jpg" id="profilePic" alt="Profile Picture">
               </div>
-              <div>
+              <div >
                 <h2 class="headers">Detailed Info</h2>
                 <h3>Name:</h3>
                 <p>Malcolm Davis Steele</p>
                 <h3>Age:</h3>
                 <p>22 years</p>
-                <h3>Location</h3>
+                <h3>Location:</h3>
                 <p>Cartago, Costa Rica</p>
                 <div class="columns">
-                  <a class="github-button" href="https://github.com/malkam03" aria-label="Follow @malkam03 on GitHub">Follow @malkam03</a>
-                </div>
+					<a class="github-button" href="https://github.com/malkam03" data-show-count="true" aria-label="Follow @malkam03 on GitHub">Follow @malkam03</a>
+				</div>
               </div>
             </div>
           </div>
@@ -177,9 +179,9 @@
                 -Albert Einstein</p>
             <hr class="horizontalDiv">
             <div id="slider">
+              <h2 id="sliderHeader">NASA SPACE APPS CHALLENGE</h2>
               <div class="icon" id="ileft"><i class="fa fa-angle-left" onclick="prev()"></i></div>
               <div class="icon" id="iright"><i class="fa fa-angle-right" onclick="next()"></i></div>
-              <h2 class="headerTitle" id="sliderHeader">NASA SPACE APPS CHALLENGE</h2>
               <p id="sliderPara">Mentored the 16 Costa Rican teams on subjects like software and hardware prototyping and business. This  is an international NASA organized hackathon that occurs over 48 hours in cities around the world, to address challenges we face on Earth and in space.</p>
             </div>
           </div>
@@ -201,7 +203,7 @@
                   		<h3 class="projectHeader">Pianoduino</h3>
                   		<p>A 61 key MIDI keyboard project with Arduino and some parts of a broken Yamaha PSR-E303. With control knobs, buttons, LCD and resistive panel. </p>
                   		<div>
-                  			<a class="github-button" href="https://github.com/malkam03/Pianoduino" aria-label="Follow project on GitHub">Follow Project</a>
+                  			<a class="github-button" href="https://github.com/malkam03/Pianoduino/subscription" data-icon="octicon-eye" aria-label="Watch malkam03/Pianoduino on GitHub">Watch Project</a>
                   		</div>
                   	</div>
                   </div>
@@ -213,7 +215,7 @@
                   		<h3 class=projectHeader>Pencilduino</h3>
                   		<p>A robot that interprets instructions given via a smartphone and draw in a 2d matrix.</p>
                   		<div>
-                  			<a class="github-button" href="https://github.com/JAMS-ITCR/Pencilduino" aria-label="Follow project on GitHub">Follow Project</a>
+                  			<a class="github-button" href="https://github.com/JAMS-ITCR/Pencilduino/subscription" data-icon="octicon-eye" aria-label="Watch JAMS-ITCR/Pencilduino on GitHub">Watch Project</a>
                   		</div>
                   	</div>
                   </div>
@@ -225,7 +227,7 @@
                   		<h3 class=projectHeader>This WebPage</h3>
                   		<p>Personal website of mine, cv and info blog about hardware and coding.</p>
                   		<div>
-                  			<a class="github-button" href="https://github.com/malkam03/malkam03.github.io" aria-label="Follow project on GitHub">Follow Project</a>
+                  			<a class="github-button" href="https://github.com/malkam03/malkam03.github.io/subscription" data-icon="octicon-eye"  aria-label="Watch malkam03/malkam03.github.io on GitHub">Watch Project</a>
                   		</div>
                   	</div>
                   </div>
@@ -407,7 +409,7 @@
               </div>
               <div class="colhalf" id="right">
                 <div class="skillEntry">
-                  <span class="skillText">MPI(Message Passing Interface)</span>
+                  <span class="skillText">MPI</span>
                   <span class="rating">
                     <span class="skillRating">
                       <span class="fillSkill"></span>
@@ -467,7 +469,7 @@
                   </span>
                 </div>
                 <div class="skillEntry">
-                  <span class="skillText">Circuit Design and Analysis</span>
+                  <span class="skillText">Circuit Design & Analysis</span>
                   <span class="rating">
                     <span class="skillRating">
                       <span class="fillSkill"></span>
@@ -527,7 +529,7 @@
                   </span>
                 </div>
                 <div class="skillEntry">
-                  <span class="skillText">Multidisciplinary Team Work</span>
+                  <span class="skillText">Multidisciplinary TW</span>
                   <span class="rating">
                     <span class="skillRating">
                       <span class="fillSkill"></span>

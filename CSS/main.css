@@ -81,7 +81,7 @@ header {
 }
 
 #sideMenuHome {
-      position: absolute;
+    position: absolute;
     bottom: 0;
     top: unset;
     right: 0;
@@ -140,12 +140,11 @@ body {
 
 #profilePic {
   border-radius: 50%;
-  min-height: 200px;
-  max-height: 400px;
-  min-width: 200px;
-  max-width: 400px;
+  height: 22vw;
+  width: 22vw;
   border: 10px solid var(--secondaryColor);
 }
+
 
 #projectGallery {
   width: 100%;
@@ -328,7 +327,10 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  text-align: justify;
+}
+
+.lAlign {
+  text-align: left;
 }
 
 .columns div {
@@ -365,6 +367,7 @@ footer {
 .col1-4 h4 {
   margin: 0;
   font-size: 110%;
+  text-align: left;
 }
 
 .col1-4 p {
@@ -413,7 +416,7 @@ footer {
 }
 
 #socialIcons ul {
-  margin: 40px 0 0 0;
+  margin: 0;
   padding: 0px;
   text-align: center;
 }
@@ -482,7 +485,7 @@ footer {
 
 #Activities #slider h2 {
   font-family: "Press Start 2P", cursive;
-  font-size: 30px;
+  font-size: 150%;
   padding-top:230px;
   color: #fff;
   text-align: center;
@@ -502,10 +505,10 @@ footer {
 
 #slider
 {
-  height: 600px;
+  height: 80vh;
   background-image:url('../images/activities/Activity-1.jpg');
   background-size: cover;
-  -webkit-transition: background 1s ;
+  -webkit-transition: background 1s;
 }
 
 #slider:after
