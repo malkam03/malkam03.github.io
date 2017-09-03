@@ -534,11 +534,11 @@ footer {
 #ileft
 {
   float: left;
-  margin: 320px 30px;
+  margin: 0 30px;
 }
 
 #iright
 {
   float: right;
-  margin: 320px 30px;
+  margin: 0 30px;
 }
