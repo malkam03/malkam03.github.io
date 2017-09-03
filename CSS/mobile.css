@@ -61,7 +61,7 @@ header {
 #headerTitle {
   min-width: 325px;
   font-family: "Press Start 2P", cursive;
-  font-size: 90%;
+  font-size: 74%;
   text-align: center;
 }
 
@@ -78,6 +78,7 @@ header {
   float: right;
   font-family: 'Open Sans';
   margin-left: -20vw;
+  display: none;
 }
 
 #sideMenuHome {
@@ -87,6 +88,7 @@ header {
     right: 0;
     margin: 0;
     height: 66px;
+    display: none;
 }
 
 .sideMenu ul {
@@ -140,8 +142,8 @@ body {
 
 #profilePic {
   border-radius: 50%;
-  height: 22vw;
-  width: 22vw;
+  height: 35vh;
+  width: auto;
   border: 10px solid var(--secondaryColor);
 }
 
@@ -152,22 +154,25 @@ body {
   padding: 5px 6%;
 }
 
+
 #projectGallery div:hover{
   z-index: 1;
+  margin-left:auto;
+  margin-right: auto;
 }
 
 .projectDataContainer {
   position: relative;
   float: left;
   padding: 5px;
-  width: 20vw;
+  width: 30vw;
 }
 
 .projectImage {
   border-radius: 50%;
   height: auto;
   display: block;
-  width: 20vw;
+  width: 30vw;
   transition: .5s ease;
   backface-visibility: hidden;
 }
@@ -193,11 +198,13 @@ body {
 .projectData p {
   margin-left: 5%;
   margin-right: 5%;
+  display: none;
   text-align: justify-all;
 }
 
 .projectData h3 {
   text-align: center;
+  font-size: 60%;
 }
 
 .projectData div div {
@@ -217,6 +224,7 @@ body {
 
 .skillEntry {
   margin-bottom: 5px;
+  width: 80vw;
 }
 
 .skillEntry:hover {
@@ -309,11 +317,14 @@ footer {
   color: var(--mainColor);
   font-family: "Press Start 2P";
   text-align: center;
+  font-size: 150%;
 }
 
 .header2 {
   color: var(--mainColor);
   font-family: "Press Start 2P";
+  font-size: 150%;
+  font-size: 120%;
 }
 
 .cite {
@@ -323,43 +334,34 @@ footer {
 }
 
 .columns {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  display: block;
+}
+
+.colhalf {
+  margin: 1px;
+  width: 100%;
+  display: inline-block;
 }
 
 .lAlign {
   text-align: left;
 }
 
-.columns div {
-  width: 23vw;
-}
-
-.colhalf {
-  margin: 1px;
-  width: 46%;
-  display: inline-block;
-}
-
 #left {
-  margin-right: 3%;
 }
 
 #right {
-  margin-left: 3%;
 }
 
 .col3-4 {
   margin-left: 3%;
-  width: 66%;
+  width: 100%;
   display: inline-block;
 }
 
 .col1-4 {
   margin: 1px;
-  width: 30%;
+  width: 100%;
   display: inline-block;
   vertical-align:top;
 }
@@ -422,7 +424,7 @@ footer {
 }
 
 #socialIcons ul li {
-  margin-right: 19px;
+  margin-right: 1vw;
   height: 34px;
   line-height: 50px;
   list-style-type: none;
@@ -475,8 +477,6 @@ footer {
   background: url('../images/icons/emailh.png');
 }
 
-
-
 .img-circle {
   border-radius: 50%;
   margin-left: 5%;
@@ -485,8 +485,8 @@ footer {
 
 #Activities #slider h2 {
   font-family: "Press Start 2P", cursive;
-  font-size: 150%;
-  padding-top:230px;
+  font-size: 100%;
+  padding-top: 10vh;
   color: #fff;
   text-align: center;
   z-index: 3;
@@ -501,14 +501,18 @@ footer {
   position: relative;
   margin-left: 20%;
   width: 60%;
+  font-size: 90%;
+  /* display: none; */
 }
 
 #slider
 {
-  height: 80vh;
+  height: 50vh;
   background-image:url('../images/activities/Activity-1.jpg');
   background-size: cover;
+  background-position: center center;
   -webkit-transition: background 1s;
+  /* display: inline; */
 }
 
 #slider:after
@@ -534,11 +538,11 @@ footer {
 #ileft
 {
   float: left;
-  margin: 320px 30px;
+  margin: 0vh 3px;
 }
 
 #iright
 {
   float: right;
-  margin: 320px 30px;
+  margin: 0vh 3px;
 }
