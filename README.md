@@ -1,8 +1,12 @@
 
-malcolmdavis.xyz
-=====================
+<div align="center">
+  <img src="images/pageHome.png" alt="Page home" height="50%vh"><br><br>
+</div>
 
-![pageHome](images/pageHome.png)
+-----------------
+
+# [malcolmdavis.xyz](http://www.malcolmdavis.xyz)
+
 Personal website of mine, cv and info blog about hardware and coding.
 
 ## Getting Started
