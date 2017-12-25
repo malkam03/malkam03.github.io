@@ -292,17 +292,19 @@ footer {
   align-items: center;
   text-align: justify;
   background: var(--mainBackColor);
+  padding-bottom: 50px;
 }
 
 
 .secondaryBack {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  padding-bottom: 50px;
 }
 
 .headers{
