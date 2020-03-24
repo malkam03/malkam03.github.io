@@ -1,5 +1,7 @@
 window.onload = function() {
-	sliderTimer();
-	scrollNav();
-	track();
+  headerSlider();
+  scrollNav();
+  gallerySlider();
+  track();
+  menuColor();
 };

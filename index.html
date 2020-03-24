@@ -1,56 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700|Press+Start+2P">
-    <script type="text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" ></script>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1 user-scalable=no"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Share+Tech&display=swap" rel="stylesheet">
+    <script
+      type="text/JavaScript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"
+    ></script>
     <script src="JS/gAnalytics.js"></script>
     <script src="JS/menuScript.js"></script>
     <script src="JS/galleryScript.js"></script>
+    <script src="JS/headerScript.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <script type="text/javascript" src="JS/main.js"></script>
-    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
-    <link rel='stylesheet' media='screen and (min-width: 746px)' href= "CSS/main.css">
-    <link rel='stylesheet' media='screen and (max-width: 746px)' href= "CSS/mobile.css">
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="CSS/main.css"
+    />
     <title>Malcolm's Site</title>
     <link rel="shortcut icon" href="images/favicon.ico" />
   </head>
   <body>
     <header>
-      <div id="navigationBar">
-        <ul>
-          <li>
-            <a href="UC.html">Blog</a>
-          </li>
-          <li>
-            <a href="Malcolm-Davis-Resume.pdf" download>Resume</a>
-          </li>
-        </ul>
-      </div>
-      <div id="headerDiv">
-        <div id="headerTitle">
-          <img class="img-circle" src="images/malkam03.png" alt="Malkam Icon">
-          <h1>
-          Hi there, I'm Malcolm.
-          </h1>
-          <hr>
-          <h2 class=cite>
-          Computer Engineering Student, <br>
-          Entrepreneur & Hardware Hacker.
-          </h2>
+      <div class="w3-content w3-section">
+        <div class="headerSlides">
+          <div id="headerDiv">
+            <div id="headerTitle">
+              <img
+                class="img-circle"
+                src="images/malkam03.png"
+                alt="Malkam Icon"
+              />
+              <h1>
+                Hi there, I'm Malcolm.
+              </h1>
+              <hr />
+              <h2>Developer</h2>
+            </div>
+          </div>
+        </div>
+        <div class="headerSlides">
+          <div id="headerDiv">
+            <div id="headerTitle">
+              <img
+                class="img-circle"
+                src="images/malkam03.png"
+                alt="Malkam Icon"
+              />
+              <h1>
+                Hi there, I'm Malcolm.
+              </h1>
+              <hr />
+              <h2>Maker</h2>
+            </div>
+          </div>
+        </div>
+        <div class="headerSlides">
+          <div id="headerDiv">
+            <div id="headerTitle">
+              <img
+                class="img-circle"
+                src="images/malkam03.png"
+                alt="Malkam Icon"
+              />
+              <h1>
+                Hi there, I'm Malcolm.
+              </h1>
+              <hr />
+              <h2>Entrepreneur</h2>
+            </div>
+          </div>
         </div>
         <div class="sideMenu" id="sideMenuHome">
           <ul>
             <li>
-              <a href="#Profile" class="scroll-down">More</a>
+              <a id="sideMenuMore" href="#Profile" class="scroll-down">More</a>
             </li>
           </ul>
         </div>
       </div>
     </header>
     <div class="wrapper">
-      <div class="sideMenu">
+      <div class="sideMenu" id="mainMenu">
         <ul>
           <li>
             <a href="#Profile">Profile</a>
@@ -75,30 +111,66 @@
       <div class="mainContent">
         <div class="primaryBack" id="Profile">
           <div class="dataBlock">
-            <div>
-              <h1 class="headers">Profile</h1>
-              <p class="cite">CE student at Costa Rica Institute of Technology, IEEE Student Branch TEC's Chair & Computer Chapter's Vice-Chair, Entrepreneur, Hardware Hacker. </p>
-            </div>
-            <hr class="horizontalDiv">
-            <div class="columns lAlign">
-              <div>
-                <h2 class="headers">About Me</h2>
-                <p>Born in an  entrepreneurial family, raised to be the tech guy of the family business. So I take some courses on computer maintenance, then I got accepted on the Costa Rica Institute of Technology and discover my passion for prototyping projects when I started to participate on development competitions. Enjoy the most working on back end and optimization of the project's software/hardware. Right now working at intel assuring the security of a web platform. </p>
-                
-              </div>
+            <div class="columns rAlign">
               <div class="img-circle">
-                <img  src="images/profile.jpeg" id="profilePic" alt="Profile Picture">
+                <img
+                  src="images/profile.jpg"
+                  id="profilePic"
+                  alt="Profile Picture"
+                />
               </div>
-              <div >
+              <div>
+                <h1 class="headers">About Me</h1>
+                <p class="cite">
+                  Computer Engineer student at Costa Rica Institute of
+                  Technology, Hardware Hacker, Entrepreneur.
+                </p>
+                <hr class="horizontalDiv" />
+
+                <p>
+                  Born in an entrepreneurial family, raised to be the tech guy
+                  of the family business. So I took some courses on computer
+                  maintenance, then I got accepted on the Costa Rica Institute
+                  of Technology and discover my passion for prototyping projects
+                  when I started to participate on development competitions.
+                  Enjoy the most working on back end and optimization of the
+                  project's software/hardware. Right now working at Intel
+                  on both security of some products and CI/CD.
+                </p>
                 <h2 class="headers">Detailed Info</h2>
-                <h3>Name:</h3>
-                <p>Malcolm Davis Steele</p>
-                <h3>Age:</h3>
-                <p>24 years</p>
-                <h3>Location:</h3>
-                <p>Cartago, Costa Rica</p>
                 <div class="columns">
-                  <a class="github-button" href="https://github.com/malkam03" data-show-count="true" aria-label="Follow @malkam03 on GitHub">Follow @malkam03</a>
+                  <div class="colQuarter">
+                    <div>
+                      <h3>Name:</h3>
+                      Malcolm Davis Steele
+                      <h3>Age:</h3>
+                      25 years
+                    </div>
+                    <div>
+                      <h3>Location:</h3>
+                      <p>Cartago, Costa Rica</p>
+                      <div>
+                        <a
+                          class="github-button"
+                          href="https://github.com/malkam03"
+                          data-size="large"
+                          data-show-count="true"
+                          aria-label="Follow @malkam03 on GitHub"
+                          >Follow @malkam03</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <button
+                      type="button"
+                      id="downloadResume"
+                      href="Malcolm-Davis-Resume.pdf"
+                      download
+                    >
+                      Download Resume
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -107,583 +179,710 @@
         <div class="secondaryBack" id="Experiences">
           <div class="dataBlock">
             <h1 class="headers">Experiences</h1>
-            <p class="cite">"The only real security that a man will have in this world is a reserve of knowledge, experience, and ability."<br>
-            -Henry Ford</p>
-            <hr class="horizontalDiv">
+            <p class="cite">
+              "The only real security that a man will have in this world is a
+              reserve of knowledge, experience, and ability."<br />
+              -Henry Ford
+            </p>
+            <hr class="horizontalDiv" />
             <h3 class="header2">Education</h3>
             <div class="row">
               <div class="col1-4">
-                <a href="https://www.tec.ac.cr/"><h4>Costa Rica Institute of Technology</h4></a>
-                <p class="timeLapse">February 2012 - 2020(estimated)</p>
+                <a href="https://www.tec.ac.cr/"
+                  ><h4>Costa Rica Institute of Technology</h4></a
+                >
+                <p class="timeLapse">
+                  February 2012 - Febraury 2021(estimated)
+                </p>
               </div>
               <div class="col3-4">
                 <strong>Licentiate Degree - Computer Engineering </strong>
-                <p>Coursework included, among others, Software Design and Specification, Image Signal Analysis, Computational Molecular Biology, Algorithms, Data Structures, Compilers, Databases, Circuit Analysis in AC and DC, Computer Architecture, a wide range of maths and sciences courses and Entrepreneurship.</p>
-                <a href="https://www.google.co.cr/maps/place/Tecnol%C3%B3gico+de+Costa+Rica+(TEC)/@9.8572523,-83.9145017,17z/data=!3m1!4b1!4m5!3m4!1s0x8fa0dff29640d73b:0xc11e19b85da8947f!8m2!3d9.857247!4d-83.912313?hl=en"><div class=place><img src="images/icons/location.png">Cartago, Costa Rica</div></a>
+                <p>
+                  Coursework included, among others, Software Architecture for Emerging Systems, Software Design and
+                  Specification, Image Signal Analysis, Computational Molecular
+                  Biology, Algorithms, Data Structures, Compilers, Operating Systems, Databases,
+                  Circuit Analysis in AC and DC, Computer Architecture, a wide
+                  range of maths and sciences courses and Entrepreneurship.
+                </p>
+                <a
+                  href="https://www.google.co.cr/maps/place/Tecnol%C3%B3gico+de+Costa+Rica+(TEC)/@9.8572523,-83.9145017,17z/data=!3m1!4b1!4m5!3m4!1s0x8fa0dff29640d73b:0xc11e19b85da8947f!8m2!3d9.857247!4d-83.912313?hl=en"
+                  ><div class="place">
+                    <img src="images/icons/location.png" />Cartago, Costa Rica
+                  </div></a
+                >
               </div>
             </div>
-            <hr>
+            <hr />
             <h3 class="header2">Career</h3>
             <div class="row">
               <div class="col1-4">
-                <a href="http://www.cenat.ac.cr/en/"><h4>Intel Costa Rica</h4></a>
+                <a href="http://www.cenat.ac.cr/en/"
+                  ><h4>Intel Costa Rica</h4></a
+                >
                 <p class="timeLapse">May 2018 - Present</p>
               </div>
               <div class="col3-4">
                 <strong> Software Student Worker </strong>
-                <p>Designed and developed tools to assure the security of a thermal and power simulator desktop app using industry standards for a year. Right now, doing something similar as well as development for a web platform.</p>
-                <a href="https://goo.gl/maps/4m3c8yLuemsYWuHy7"><div class=place><img src="images/icons/location.png">Belen, Costa Rica</div></a>
+                <p>
+                  Designed and developed tools to assure the security of a
+                  couple simulator desktop apps using industry standards for a year. Then, did something similar
+                  as well as development for a web platform. And right now I'm more focused on developing tools for CI/CD tasks for the
+                  same applications/platforms.
+                </p>
+                <a href="https://goo.gl/maps/4m3c8yLuemsYWuHy7"
+                  ><div class="place">
+                    <img src="images/icons/location.png" />Belen, Costa Rica
+                  </div></a
+                >
               </div>
             </div>
             <div class="row">
               <div class="col1-4">
-                <a href="http://www.cenat.ac.cr/en/"><h4>Costa Rica's National Center for High Technology</h4></a>
+                <a href="http://www.cenat.ac.cr/en/"
+                  ><h4>Costa Rica's National Center for High Technology</h4></a
+                >
                 <p class="timeLapse">Jan 2018 - May 2018</p>
               </div>
               <div class="col3-4">
                 <strong> Research Assistant </strong>
-                <p>Researched a cluster benchmark and started the porting of the same benchmark from an message passing parallelism approach to an object oriented parallelism.</p>
-                <a href="https://www.google.co.cr/maps/place/National+Center+for+High+Technology/@9.950617,-84.1267677,17z/data=!3m1!4b1!4m5!3m4!1s0x8fa0fb687f6d81db:0x46fd58168ef4c5bb!8m2!3d9.950617!4d-84.124579?hl=en"><div class=place><img src="images/icons/location.png">Pavas, Costa Rica</div></a>
+                <p>
+                  Researched a cluster benchmark and started the porting of the
+                  same benchmark from an message passing parallelism approach to
+                  an object oriented parallelism.
+                </p>
+                <a
+                  href="https://www.google.co.cr/maps/place/National+Center+for+High+Technology/@9.950617,-84.1267677,17z/data=!3m1!4b1!4m5!3m4!1s0x8fa0fb687f6d81db:0x46fd58168ef4c5bb!8m2!3d9.950617!4d-84.124579?hl=en"
+                  ><div class="place">
+                    <img src="images/icons/location.png" />Pavas, Costa Rica
+                  </div></a
+                >
               </div>
             </div>
             <div class="row">
               <div class="col1-4">
-                <a href="https://www.facebook.com/ieeetec/"><h4>IEEE TEC Costa Rica Branch</h4></a>
+                <a href="https://www.facebook.com/ieeetec/"
+                  ><h4>IEEE TEC Costa Rica Branch</h4></a
+                >
                 <p class="timeLapse">Jan 2018 - Jun 2018</p>
               </div>
               <div class="col3-4">
                 <strong> Branch's Chair </strong>
-                <p>Organized the structure developing tools that helped in the process of managing the student branch.</p>
-                <a href="https://www.google.co.cr/maps/place/Tecnol%C3%B3gico+de+Costa+Rica+(TEC)/@9.8572523,-83.9145017,17z/data=!3m1!4b1!4m5!3m4!1s0x8fa0dff29640d73b:0xc11e19b85da8947f!8m2!3d9.857247!4d-83.912313?hl=en"><div class=place><img src="images/icons/location.png">Cartago, Costa Rica</div></a>
+                <p>
+                  Organized the structure developing tools that helped in the
+                  process of managing the student branch.
+                </p>
+                <a
+                  href="https://www.google.co.cr/maps/place/Tecnol%C3%B3gico+de+Costa+Rica+(TEC)/@9.8572523,-83.9145017,17z/data=!3m1!4b1!4m5!3m4!1s0x8fa0dff29640d73b:0xc11e19b85da8947f!8m2!3d9.857247!4d-83.912313?hl=en"
+                  ><div class="place">
+                    <img src="images/icons/location.png" />Cartago, Costa Rica
+                  </div></a
+                >
               </div>
             </div>
             <div class="row">
               <div class="col1-4">
-                <a href="https://www.facebook.com/TEComputerIEEE/"><h4>IEEE TEC Costa Rica Branch</h4></a>
+                <a href="https://www.facebook.com/TEComputerIEEE/"
+                  ><h4>IEEE TEC Costa Rica Branch</h4></a
+                >
                 <p class="timeLapse">Aug 2017 - Jun 2018</p>
               </div>
               <div class="col3-4">
                 <strong>Vice Chair Computer Society </strong>
-                <p>Estabished, with the help of my team, the Computer Society of the IEEE, TEC Costa Rica Branch. Promote the Society imparting some parallel programming Workshops. Won the <a href="http://interface.computer.org/outstanding-ieee-computer-society-chapter-awards-poland-costa-rica/">2017 Outstanding CS Chapter Award</a>. Help planning and organizing the 33 activities of the 2017 including the IEEEXtreme 11.0 CR and other workshops and lectures.</p>
-                <a href="https://www.google.co.cr/maps/place/Tecnol%C3%B3gico+de+Costa+Rica+(TEC)/@9.8572523,-83.9145017,17z/data=!3m1!4b1!4m5!3m4!1s0x8fa0dff29640d73b:0xc11e19b85da8947f!8m2!3d9.857247!4d-83.912313?hl=en"><div class=place><img src="images/icons/location.png">Cartago, Costa Rica</div></a>
+                <p>
+                  Estabished, with the help of my team, the Computer Society of
+                  the IEEE, TEC Costa Rica Branch. Promote the Society imparting
+                  some parallel programming Workshops. Won the
+                  <a
+                    href="http://interface.computer.org/outstanding-ieee-computer-society-chapter-awards-poland-costa-rica/"
+                    >2017 Outstanding CS Chapter Award</a
+                  >. Help planning and organizing the 33 activities of the 2017
+                  including the IEEEXtreme 11.0 CR and other workshops and
+                  lectures.
+                </p>
+                <a
+                  href="https://www.google.co.cr/maps/place/Tecnol%C3%B3gico+de+Costa+Rica+(TEC)/@9.8572523,-83.9145017,17z/data=!3m1!4b1!4m5!3m4!1s0x8fa0dff29640d73b:0xc11e19b85da8947f!8m2!3d9.857247!4d-83.912313?hl=en"
+                  ><div class="place">
+                    <img src="images/icons/location.png" />Cartago, Costa Rica
+                  </div></a
+                >
               </div>
             </div>
             <div class="row">
-              <div class="col1-4"><a href="http://ic-itcr.ac.cr/cic/index.php/proyectos/proyectos-actuales/gotouch"><h4>GoTouch - Computer Investigation Center</h4></a>
-              
-              <p class="timeLapse">Jun 2017 - May 2018</p>
-              
-            </div>
-            <div class="col3-4">
-              <strong>Software Developer</strong>
-              <p>Started the development of an informative app for the JOCICI 2017 congress. Bring back to life an educational game developed by an early team. </p>
-              <a href="https://www.google.co.cr/maps/place/Tecnol%C3%B3gico+de+Costa+Rica+(TEC)/@9.8572523,-83.9145017,17z/data=!3m1!4b1!4m5!3m4!1s0x8fa0dff29640d73b:0xc11e19b85da8947f!8m2!3d9.857247!4d-83.912313?hl=en"><div class=place><img src="images/icons/location.png">Cartago, Costa Rica</div></a>
-            </div>
-          </div>
-          
-          <div class="row">
-            <div class="col1-4">
-              <h4>Nabit</h4>
-              <p class="timeLapse">Aug 2016 - Dec 2017</p>
-            </div>
-            <div class="col3-4">
-              <strong>Co-founder and CTO </strong>
-              <p>Co-founded Nabit, a research and development company that creates technology that eases the work of people who are making efforts to help the environment in different ways. Lead the Software and Hardware departments to research and develop a way to make wildlife investigation cameras meet the unmet needs of wildlife researchers, at half the price. We develop a prototype.</p>
-              <a href="https://www.google.co.cr/maps/place/Tecnol%C3%B3gico+de+Costa+Rica+(TEC)/@9.8572523,-83.9145017,17z/data=!3m1!4b1!4m5!3m4!1s0x8fa0dff29640d73b:0xc11e19b85da8947f!8m2!3d9.857247!4d-83.912313?hl=en"><div class=place><img src="images/icons/location.png">Cartago, Costa Rica</div></a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col1-4">
-              <a href="https://www.tec.ac.cr/"><h4>Costa Rica Institute of Technology</h4></a>
-              <p class="timeLapse">Mar 2015 - June 2017</p>
-            </div>
-            <div class="col3-4">
-              <strong> Physics Course Assistant </strong>
-              <p>Developed a mobile assignment grading system, that halved the revision and report time, also build feedback of the average behavior of the students with auto generated statistics.</p>
-              <a href="https://www.google.co.cr/maps/place/Tecnol%C3%B3gico+de+Costa+Rica+(TEC)/@9.8572523,-83.9145017,17z/data=!3m1!4b1!4m5!3m4!1s0x8fa0dff29640d73b:0xc11e19b85da8947f!8m2!3d9.857247!4d-83.912313?hl=en"><div class=place><img src="images/icons/location.png">Cartago, Costa Rica</div></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="primaryBack" id="Activities">
-        <div class="dataBlock">
-          <h1 class="headers">Activities</h1>
-          <p class="cite">
-            "Only those who attempt the absurd can achieve the impossible."<br>
-          -Albert Einstein</p>
-          <hr class="horizontalDiv">
-          <div id="slider">
-            <h2 id="sliderHeader">NASA SPACE APPS CHALLENGE</h2>
-            <div class="icon" id="ileft"><i class="fa fa-angle-left" onclick="prev()"></i></div>
-            <div class="icon" id="iright"><i class="fa fa-angle-right" onclick="next()"></i></div>
-            <p id="sliderPara">Mentored the 16 Costa Rican teams on subjects like software and hardware prototyping and business. This  is an international NASA organized hackathon that occurs over 48 hours in cities around the world, to address challenges we face on Earth and in space.</p>
-          </div>
-        </div>
-      </div>
-      <div class="secondaryBack" id="Projects">
-        <div class="dataBlock">
-          <h1 class="headers">Projects</h1>
-          <p class="cite">"It is a poor workman who blames his tools - the good man gets on with the job, given what he's got, and gets the best answer he can."<br>
-          -Richard Hamming</p>
-          <hr class="horizontalDiv">
-          <div id="projectGallery">
-            <div class="projectDataContainer">
-              <img class="projectImage" src="images/projects/Pianoduino.jpg" />
-              <div class="projectData">
-                <div>
-                  <h3 class="projectHeader">Pianoduino</h3>
-                  <p>A 61 key MIDI keyboard project with Arduino and some parts of a broken Yamaha PSR-E303. With control knobs, buttons, LCD and resistive panel. </p>
-                  <div>
-                    <a class="github-button" href="https://github.com/malkam03/Pianoduino/subscription" data-icon="octicon-eye" aria-label="Watch malkam03/Pianoduino on GitHub">Watch Project</a>
-                  </div>
-                </div>
+              <div class="col1-4">
+                <a
+                  href="http://ic-itcr.ac.cr/cic/index.php/proyectos/proyectos-actuales/gotouch"
+                  ><h4>GoTouch - Computer Investigation Center</h4></a
+                >
+
+                <p class="timeLapse">Jun 2017 - May 2018</p>
+              </div>
+              <div class="col3-4">
+                <strong>Software Developer</strong>
+                <p>
+                  Started the development of an informative app for the JOCICI
+                  2017 congress. Bring back to life an educational game
+                  developed by an early team.
+                </p>
+                <a
+                  href="https://www.google.co.cr/maps/place/Tecnol%C3%B3gico+de+Costa+Rica+(TEC)/@9.8572523,-83.9145017,17z/data=!3m1!4b1!4m5!3m4!1s0x8fa0dff29640d73b:0xc11e19b85da8947f!8m2!3d9.857247!4d-83.912313?hl=en"
+                  ><div class="place">
+                    <img src="images/icons/location.png" />Cartago, Costa Rica
+                  </div></a
+                >
               </div>
             </div>
-            <div class="projectDataContainer">
-              <img class="projectImage" src="images/projects/Pencilduino.jpg" />
-              <div class="projectData">
-                <div>
-                  <h3 class=projectHeader>Pencilduino</h3>
-                  <p>A robot that interprets instructions given via a smartphone and draw in a 2d matrix.</p>
-                  <div>
-                    <a class="github-button" href="https://github.com/JAMS-ITCR/Pencilduino/subscription" data-icon="octicon-eye" aria-label="Watch JAMS-ITCR/Pencilduino on GitHub">Watch Project</a>
-                  </div>
-                </div>
+
+            <div class="row">
+              <div class="col1-4">
+                <h4>Nabit</h4>
+                <p class="timeLapse">Aug 2016 - Dec 2017</p>
+              </div>
+              <div class="col3-4">
+                <strong>Co-founder and CTO </strong>
+                <p>
+                  Co-founded Nabit, a research and development company that
+                  creates technology that eases the work of people who are
+                  making efforts to help the environment in different ways. Led
+                  the Software and Hardware departments to research and develop
+                  a way to make wildlife investigation cameras meet the unmet
+                  needs of wildlife researchers, at half the price. We develop a
+                  prototype.
+                </p>
+                <a
+                  href="https://www.google.co.cr/maps/place/Tecnol%C3%B3gico+de+Costa+Rica+(TEC)/@9.8572523,-83.9145017,17z/data=!3m1!4b1!4m5!3m4!1s0x8fa0dff29640d73b:0xc11e19b85da8947f!8m2!3d9.857247!4d-83.912313?hl=en"
+                  ><div class="place">
+                    <img src="images/icons/location.png" />Cartago, Costa Rica
+                  </div></a
+                >
               </div>
             </div>
-            <div class="projectDataContainer">
-              <img class="projectImage" src="images/projects/Dockers.png" />
-              <div class="projectData">
-                <div>
-                  <h3 class=projectHeader>Malcolm's Dockers</h3>
-                  <p>A repository with some of the Dockers I used for different projects.</p>
-                  <div>
-                    <a class="github-button" href="https://github.com/malkam03/DockerFiles/subscription" data-icon="octicon-eye"  aria-label="Watch malkam03/DockerFiles on GitHub">Watch Project</a>
-                  </div>
-                </div>
+            <div class="row">
+              <div class="col1-4">
+                <a href="https://www.tec.ac.cr/"
+                  ><h4>Costa Rica Institute of Technology</h4></a
+                >
+                <p class="timeLapse">Mar 2015 - June 2017</p>
               </div>
-            </div>
-            <div class="projectDataContainer">
-              <img class="projectImage" src="images/projects/None.png" />
-              <div class="projectData">
-                <div>
-                  <h3 class=projectHeader>This WebPage</h3>
-                  <p>Personal website of mine, cv and info blog about hardware and coding.</p>
-                  <div>
-                    <a class="github-button" href="https://github.com/malkam03/malkam03.github.io/subscription" data-icon="octicon-eye"  aria-label="Watch malkam03/malkam03.github.io on GitHub">Watch Project</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="projectDataContainer">
-              <img class="projectImage" src="images/projects/Tutorials.jpg" />
-              <div class="projectData">
-                <div>
-                  <h3 class=projectHeader>Tutorials</h3>
-                  <p>A repo with some of the workshops and lectures imparted by me.</p>
-                  <div>
-                    <a class="github-button" href="https://github.com/malkam03/Tutorials/subscription" data-icon="octicon-eye"  aria-label="Watch malkam03/Tutorials on GitHub">Watch Project</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="projectDataContainer">
-              <img class="projectImage" src="images/projects/PhysicsGrading.jpg" />
-              <div class="projectData">
-                <div>
-                  <h3 class=projectHeader>PhysicsGrading</h3>
-                  <p>A grading app for the physics courses assistance, connected with the teachers evaluation sheet to create an automatic report.</p>
-                </div>
+              <div class="col3-4">
+                <strong> Physics Course Assistant </strong>
+                <p>
+                  Developed a mobile assignment grading system, that halved the
+                  revision and report time, also build feedback of the average
+                  behavior of the students with auto generated statistics.
+                </p>
+                <a
+                  href="https://www.google.co.cr/maps/place/Tecnol%C3%B3gico+de+Costa+Rica+(TEC)/@9.8572523,-83.9145017,17z/data=!3m1!4b1!4m5!3m4!1s0x8fa0dff29640d73b:0xc11e19b85da8947f!8m2!3d9.857247!4d-83.912313?hl=en"
+                  ><div class="place">
+                    <img src="images/icons/location.png" />Cartago, Costa Rica
+                  </div></a
+                >
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="primaryBack" id="Skills">
-        <div class=dataBlock>
-          <h1 class=headers>Skills</h1>
-          <p class=cite>"Force has no place where there is need of skill."<br>
-          -Herodotus</p>
-          <hr class=horizontalDiv>
-          <h3 class=header2>Skill Set</h3>
-          <div class="row">
-            <div class="colhalf" id="left">
-              <div class="skillEntry">
-                <span class="skillText">C/C++</span>
-                <span class="rating">
-                  <span class="skillRating">
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="noSkill"></span>
-                  </span>
-                </span>
-              </div>
-              <div class="skillEntry">
-                <span class="skillText">Python</span>
-                <span class="rating">
-                  <span class="skillRating">
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="halfSkill"></span>
-                  </span>
-                </span>
-              </div>
-              <div class="skillEntry">
-                <span class="skillText">Java</span>
-                <span class="rating">
-                  <span class="skillRating">
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="halfSkill"></span>
-                    <span class="noSkill"></span>
-                  </span>
-                </span>
-              </div>
-              <div class="skillEntry">
-                <span class="skillText">Lisp/Haskel</span>
-                <span class="rating">
-                  <span class="skillRating">
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="halfSkill"></span>
-                    <span class="noSkill"></span>
-                    <span class="noSkill"></span>
-                  </span>
-                </span>
-              </div>
-              <div class="skillEntry">
-                <span class="skillText">Go</span>
-                <span class="rating">
-                  <span class="skillRating">
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="halfSkill"></span>
-                    <span class="noSkill"></span>
-                    <span class="noSkill"></span>
-                  </span>
-                </span>
-              </div>
-              <div class="skillEntry">
-                <span class="skillText">Shell/Scripting</span>
-                <span class="rating">
-                  <span class="skillRating">
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="noSkill"></span>
-                  </span>
-                </span>
-              </div>
-              <div class="skillEntry">
-                <span class="skillText">HTML</span>
-                <span class="rating">
-                  <span class="skillRating">
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="halfSkill"></span>
-                    <span class="noSkill"></span>
-                  </span>
-                </span>
-              </div>
-              <div class="skillEntry">
-                <span class="skillText">CSS</span>
-                <span class="rating">
-                  <span class="skillRating">
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="halfSkill"></span>
-                    <span class="noSkill"></span>
-                  </span>
-                </span>
-              </div>
-              <div class="skillEntry">
-                <span class="skillText">Java Script</span>
-                <span class="rating">
-                  <span class="skillRating">
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="halfSkill"></span>
-                    <span class="noSkill"></span>
-                    <span class="noSkill"></span>
-                  </span>
-                </span>
-              </div>
-              <div class="skillEntry">
-                <span class="skillText">PHP</span>
-                <span class="rating">
-                  <span class="skillRating">
-                    <span class="fillSkill"></span>
-                    <span class="halfSkill"></span>
-                    <span class="noSkill"></span>
-                    <span class="noSkill"></span>
-                    <span class="noSkill"></span>
-                  </span>
-                </span>
-              </div>
-              <div class="skillEntry">
-                <span class="skillText">MySQL</span>
-                <span class="rating">
-                  <span class="skillRating">
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="halfSkill"></span>
-                    <span class="noSkill"></span>
-                    <span class="noSkill"></span>
-                  </span>
-                </span>
-              </div>
-              <div class="skillEntry">
-                <span class="skillText">Wordpress</span>
-                <span class="rating">
-                  <span class="skillRating">
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="noSkill"></span>
-                    <span class="noSkill"></span>
-                  </span>
-                </span>
-              </div>
-              <div class="skillEntry">
-                <span class="skillText">AngularJs</span>
-                <span class="rating">
-                  <span class="skillRating">
-                    <span class="fillSkill"></span>
-                    <span class="halfSkill"></span>
-                    <span class="noSkill"></span>
-                    <span class="noSkill"></span>
-                    <span class="noSkill"></span>
-                  </span>
-                </span>
-              </div>
-              <div class="skillEntry">
-                <span class="skillText">Git</span>
-                <span class="rating">
-                  <span class="skillRating">
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="noSkill"></span>
-                  </span>
-                </span>
+        <div id="Activities">
+          <div class="w3-content w3-section">
+            <div class="activitiesSlides">
+              <div class="sliderContent" id="slider">
+                <h1 class="headers">Activities</h1>
+                <p class="cite">
+                  "Only those who attempt the absurd can achieve the
+                  impossible."<br />
+                  -Albert Einstein
+                </p>
+                <h2 class="sliderHeader"></h2>
+                <div class="icon" id="ileft">
+                  <i class="fa fa-angle-left" onclick="prev()"></i>
+                </div>
+                <div class="icon" id="iright">
+                  <i class="fa fa-angle-right" onclick="next()"></i>
+                </div>
+                <p class="sliderPara"></p>
               </div>
             </div>
-            <div class="colhalf" id="right">
-              <div class="skillEntry">
-                <span class="skillText">MPI</span>
-                <span class="rating">
-                  <span class="skillRating">
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="halfSkill"></span>
-                    <span class="noSkill"></span>
-                    <span class="noSkill"></span>
-                  </span>
-                </span>
+            <div class="activitiesSlides">
+              <div class="sliderContent" id="slider">
+                <h1 class="headers">Activities</h1>
+                <p class="cite">
+                  "Only those who attempt the absurd can achieve the
+                  impossible."<br />
+                  -Albert Einstein
+                </p>
+                <h2 class="sliderHeader"></h2>
+                <div class="icon" id="ileft">
+                  <i class="fa fa-angle-left" onclick="prev()"></i>
+                </div>
+                <div class="icon" id="iright">
+                  <i class="fa fa-angle-right" onclick="next()"></i>
+                </div>
+                <p class="sliderPara"></p>
               </div>
-              <div class="skillEntry">
-                <span class="skillText">GNU-Linux</span>
-                <span class="rating">
-                  <span class="skillRating">
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="halfSkill"></span>
-                  </span>
-                </span>
+            </div>
+            <div class="activitiesSlides">
+              <div class="sliderContent" id="slider">
+                <h1 class="headers">Activities</h1>
+                <p class="cite">
+                  "Only those who attempt the absurd can achieve the
+                  impossible."<br />
+                  -Albert Einstein
+                </p>
+                <h2 class="sliderHeader"></h2>
+                <div class="icon" id="ileft">
+                  <i class="fa fa-angle-left" onclick="prev()"></i>
+                </div>
+                <div class="icon" id="iright">
+                  <i class="fa fa-angle-right" onclick="next()"></i>
+                </div>
+                <p class="sliderPara"></p>
               </div>
-              <div class="skillEntry">
-                <span class="skillText">Windows</span>
-                <span class="rating">
-                  <span class="skillRating">
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="halfSkill"></span>
-                    <span class="noSkill"></span>
-                  </span>
-                </span>
+            </div>
+            <div class="activitiesSlides">
+              <div class="sliderContent" id="slider">
+                <h1 class="headers">Activities</h1>
+                <p class="cite">
+                  "Only those who attempt the absurd can achieve the
+                  impossible."<br />
+                  -Albert Einstein
+                </p>
+                <h2 class="sliderHeader"></h2>
+                <div class="icon" id="ileft">
+                  <i class="fa fa-angle-left" onclick="prev()"></i>
+                </div>
+                <div class="icon" id="iright">
+                  <i class="fa fa-angle-right" onclick="next()"></i>
+                </div>
+                <p class="sliderPara"></p>
               </div>
-              <div class="skillEntry">
-                <span class="skillText">MacOS</span>
-                <span class="rating">
-                  <span class="skillRating">
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="noSkill"></span>
-                    <span class="noSkill"></span>
-                  </span>
-                </span>
+            </div>
+            <div class="activitiesSlides">
+              <div class="sliderContent" id="slider">
+                <h1 class="headers">Activities</h1>
+                <p class="cite">
+                  "Only those who attempt the absurd can achieve the
+                  impossible."<br />
+                  -Albert Einstein
+                </p>
+                <h2 class="sliderHeader"></h2>
+                <div class="icon" id="ileft">
+                  <i class="fa fa-angle-left" onclick="prev()"></i>
+                </div>
+                <div class="icon" id="iright">
+                  <i class="fa fa-angle-right" onclick="next()"></i>
+                </div>
+                <p class="sliderPara"></p>
               </div>
-              <div class="skillEntry">
-                <span class="skillText">Scrum</span>
-                <span class="rating">
-                  <span class="skillRating">
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="halfSkill"></span>
-                    <span class="noSkill"></span>
-                  </span>
-                </span>
+            </div>
+            <div class="activitiesSlides">
+              <div class="sliderContent" id="slider">
+                <h1 class="headers">Activities</h1>
+                <p class="cite">
+                  "Only those who attempt the absurd can achieve the
+                  impossible."<br />
+                  -Albert Einstein
+                </p>
+                <h2 class="sliderHeader"></h2>
+                <div class="icon" id="ileft">
+                  <i class="fa fa-angle-left" onclick="prev()"></i>
+                </div>
+                <div class="icon" id="iright">
+                  <i class="fa fa-angle-right" onclick="next()"></i>
+                </div>
+                <p class="sliderPara"></p>
               </div>
-              <div class="skillEntry">
-                <span class="skillText">Jira</span>
-                <span class="rating">
-                  <span class="skillRating">
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="halfSkill"></span>
-                    <span class="noSkill"></span>
-                  </span>
-                </span>
+            </div>
+            <div class="activitiesSlides">
+              <div class="sliderContent" id="slider">
+                <h1 class="headers">Activities</h1>
+                <p class="cite">
+                  "Only those who attempt the absurd can achieve the
+                  impossible."<br />
+                  -Albert Einstein
+                </p>
+                <h2 class="sliderHeader"></h2>
+                <div class="icon" id="ileft">
+                  <i class="fa fa-angle-left" onclick="prev()"></i>
+                </div>
+                <div class="icon" id="iright">
+                  <i class="fa fa-angle-right" onclick="next()"></i>
+                </div>
+                <p class="sliderPara"></p>
               </div>
-              <div class="skillEntry">
-                <span class="skillText">Klocwork</span>
-                <span class="rating">
-                  <span class="skillRating">
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="halfSkill"></span>
-                    <span class="noSkill"></span>
-                  </span>
-                </span>
+            </div>
+            <div class="activitiesSlides">
+              <div class="sliderContent" id="slider">
+                <h1 class="headers">Activities</h1>
+                <p class="cite">
+                  "Only those who attempt the absurd can achieve the
+                  impossible."<br />
+                  -Albert Einstein
+                </p>
+                <h2 class="sliderHeader"></h2>
+                <div class="icon" id="ileft">
+                  <i class="fa fa-angle-left" onclick="prev()"></i>
+                </div>
+                <div class="icon" id="iright">
+                  <i class="fa fa-angle-right" onclick="next()"></i>
+                </div>
+                <p class="sliderPara"></p>
               </div>
-              <div class="skillEntry">
-                <span class="skillText">Circuit Design & Analysis</span>
-                <span class="rating">
-                  <span class="skillRating">
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="halfSkill"></span>
-                    <span class="noSkill"></span>
-                  </span>
-                </span>
+            </div>
+            <div class="activitiesSlides">
+              <div class="sliderContent" id="slider">
+                <h1 class="headers">Activities</h1>
+                <p class="cite">
+                  "Only those who attempt the absurd can achieve the
+                  impossible."<br />
+                  -Albert Einstein
+                </p>
+                <h2 class="sliderHeader"></h2>
+                <div class="icon" id="ileft">
+                  <i class="fa fa-angle-left" onclick="prev()"></i>
+                </div>
+                <div class="icon" id="iright">
+                  <i class="fa fa-angle-right" onclick="next()"></i>
+                </div>
+                <p class="sliderPara"></p>
               </div>
-              <div class="skillEntry">
-                <span class="skillText">Arduino Prototyping</span>
-                <span class="rating">
-                  <span class="skillRating">
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="noSkill"></span>
-                  </span>
-                </span>
+            </div>
+            <div class="activitiesSlides">
+              <div class="sliderContent" id="slider">
+                <h1 class="headers">Activities</h1>
+                <p class="cite">
+                  "Only those who attempt the absurd can achieve the
+                  impossible."<br />
+                  -Albert Einstein
+                </p>
+                <h2 class="sliderHeader"></h2>
+                <div class="icon" id="ileft">
+                  <i class="fa fa-angle-left" onclick="prev()"></i>
+                </div>
+                <div class="icon" id="iright">
+                  <i class="fa fa-angle-right" onclick="next()"></i>
+                </div>
+                <p class="sliderPara"></p>
               </div>
-              <div class="skillEntry">
-                <span class="skillText">Raspberry Pi Prototyping</span>
-                <span class="rating">
-                  <span class="skillRating">
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="noSkill"></span>
-                  </span>
-                </span>
+            </div>
+            <div class="activitiesSlides">
+              <div class="sliderContent" id="slider">
+                <h1 class="headers">Activities</h1>
+                <p class="cite">
+                  "Only those who attempt the absurd can achieve the
+                  impossible."<br />
+                  -Albert Einstein
+                </p>
+                <h2 class="sliderHeader"></h2>
+                <div class="icon" id="ileft">
+                  <i class="fa fa-angle-left" onclick="prev()"></i>
+                </div>
+                <div class="icon" id="iright">
+                  <i class="fa fa-angle-right" onclick="next()"></i>
+                </div>
+                <p class="sliderPara"></p>
               </div>
-              <div class="skillEntry">
-                <span class="skillText">Problem Solving</span>
-                <span class="rating">
-                  <span class="skillRating">
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="noSkill"></span>
-                  </span>
-                </span>
+            </div>
+            <div class="activitiesSlides">
+              <div class="sliderContent" id="slider">
+                <h1 class="headers">Activities</h1>
+                <p class="cite">
+                  "Only those who attempt the absurd can achieve the
+                  impossible."<br />
+                  -Albert Einstein
+                </p>
+                <h2 class="sliderHeader"></h2>
+                <div class="icon" id="ileft">
+                  <i class="fa fa-angle-left" onclick="prev()"></i>
+                </div>
+                <div class="icon" id="iright">
+                  <i class="fa fa-angle-right" onclick="next()"></i>
+                </div>
+                <p class="sliderPara"></p>
               </div>
-              <div class="skillEntry">
-                <span class="skillText">Leadership</span>
-                <span class="rating">
-                  <span class="skillRating">
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="halfSkill"></span>
-                    <span class="noSkill"></span>
-                  </span>
-                </span>
+            </div>
+            <div class="activitiesSlides">
+              <div class="sliderContent" id="slider">
+                <h1 class="headers">Activities</h1>
+                <p class="cite">
+                  "Only those who attempt the absurd can achieve the
+                  impossible."<br />
+                  -Albert Einstein
+                </p>
+                <h2 class="sliderHeader"></h2>
+                <div class="icon" id="ileft">
+                  <i class="fa fa-angle-left" onclick="prev()"></i>
+                </div>
+                <div class="icon" id="iright">
+                  <i class="fa fa-angle-right" onclick="next()"></i>
+                </div>
+                <p class="sliderPara"></p>
               </div>
-              <div class="skillEntry">
-                <span class="skillText">Multidisciplinary TW</span>
-                <span class="rating">
-                  <span class="skillRating">
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="noSkill"></span>
-                  </span>
-                </span>
-              </div>
-              <div class="skillEntry">
-                <span class="skillText">Oration</span>
-                <span class="rating">
-                  <span class="skillRating">
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="fillSkill"></span>
-                    <span class="halfSkill"></span>
-                    <span class="noSkill"></span>
-                  </span>
-                </span>
+            </div>
+            <div class="activitiesSlides">
+              <div class="sliderContent" id="slider">
+                <h1 class="headers">Activities</h1>
+                <p class="cite">
+                  "Only those who attempt the absurd can achieve the
+                  impossible."<br />
+                  -Albert Einstein
+                </p>
+                <h2 class="sliderHeader"></h2>
+                <div class="icon" id="ileft">
+                  <i class="fa fa-angle-left" onclick="prev()"></i>
+                </div>
+                <div class="icon" id="iright">
+                  <i class="fa fa-angle-right" onclick="next()"></i>
+                </div>
+                <p class="sliderPara"></p>
               </div>
             </div>
           </div>
         </div>
+        <div class="secondaryBack" id="Projects">
+          <div class="dataBlock">
+            <h1 class="headers">Projects</h1>
+            <p class="cite">
+              "It is a poor workman who blames his tools - the good man gets on
+              with the job, given what he's got, and gets the best answer he
+              can."<br />
+              -Richard Hamming
+            </p>
+            <hr class="horizontalDiv" />
+            <div id="projectGallery">
+              <div class="projectDataContainer">
+                <img
+                  class="projectImage"
+                  src="images/projects/Pianoduino.jpg"
+                />
+                <div class="projectData">
+                  <div>
+                    <h3 class="projectHeader">Pianoduino</h3>
+                    <p>
+                      A 61 key MIDI keyboard project with Arduino and some parts
+                      of a broken Yamaha PSR-E303. With control knobs, buttons,
+                      LCD and resistive panel.
+                    </p>
+                    <div>
+                      <a
+                        class="github-button"
+                        href="https://github.com/malkam03/Pianoduino/subscription"
+                        data-size="large"
+                        data-icon="octicon-eye"
+                        aria-label="Watch malkam03/Pianoduino on GitHub"
+                        >Watch Project</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="projectDataContainer">
+                <img
+                  class="projectImage"
+                  src="images/projects/Pencilduino.jpg"
+                />
+                <div class="projectData">
+                  <div>
+                    <h3 class="projectHeader">Pencilduino</h3>
+                    <p>
+                      A robot that interprets instructions given via a
+                      smartphone and draw in a 2d matrix.
+                    </p>
+                    <div>
+                      <a
+                        class="github-button"
+                        href="https://github.com/JAMS-ITCR/Pencilduino/subscription"
+                        data-size="large"
+                        data-icon="octicon-eye"
+                        aria-label="Watch JAMS-ITCR/Pencilduino on GitHub"
+                        >Watch Project</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="projectDataContainer">
+                <img class="projectImage" src="images/projects/Dockers.png" />
+                <div class="projectData">
+                  <div>
+                    <h3 class="projectHeader">Malcolm's Dockers</h3>
+                    <p>
+                      A repository with some of the Dockers I used for different
+                      projects.
+                    </p>
+                    <div>
+                      <a
+                        class="github-button"
+                        href="https://github.com/malkam03/DockerFiles/subscription"
+                        data-size="large"
+                        data-icon="octicon-eye"
+                        aria-label="Watch malkam03/DockerFiles on GitHub"
+                        >Watch Project</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="projectDataContainer">
+                <img class="projectImage" src="images/projects/None.png" />
+                <div class="projectData">
+                  <div>
+                    <h3 class="projectHeader">This WebPage</h3>
+                    <p>
+                      Personal website of mine, cv and info blog about hardware
+                      and coding.
+                    </p>
+                    <div>
+                      <a
+                        class="github-button"
+                        href="https://github.com/malkam03/malkam03.github.io/subscription"
+                        data-size="large"
+                        data-icon="octicon-eye"
+                        aria-label="Watch malkam03/malkam03.github.io on GitHub"
+                        >Watch Project</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="projectDataContainer">
+                <img class="projectImage" src="images/projects/Tutorials.jpg" />
+                <div class="projectData">
+                  <div>
+                    <h3 class="projectHeader">Tutorials</h3>
+                    <p>
+                      A repo with some of the workshops and lectures imparted by
+                      me.
+                    </p>
+                    <div>
+                      <a
+                        class="github-button"
+                        href="https://github.com/malkam03/Tutorials/subscription"
+                        data-size="large"
+                        data-icon="octicon-eye"
+                        aria-label="Watch malkam03/Tutorials on GitHub"
+                        >Watch Project</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="projectDataContainer">
+                <img
+                  class="projectImage"
+                  src="images/projects/PhysicsGrading.jpg"
+                />
+                <div class="projectData">
+                  <div>
+                    <h3 class="projectHeader">PhysicsGrading</h3>
+                    <p>
+                      A grading app for the physics courses assistance,
+                      connected with the teachers evaluation sheet to create an
+                      automatic report.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="primaryBack" id="Skills">
+          <div class="dataBlock">
+            <h1 class="headers">Skills</h1>
+            <p class="cite">
+              "Force has no place where there is need of skill."<br />
+              -Herodotus
+            </p>
+            <hr class="horizontalDiv" />
+            <h3 class="header2">Skill Set</h3>
+            <ul class="skillSet">
+              <li class="skill">Go</li>
+              <li class="skill">Python</li>
+              <li class="skill">C/C++</li>
+              <li class="skill">Java</li>
+              <li class="skill">Lisp/Haskel</li>
+              <li class="skill">Shell/Scripting</li>
+              <li class="skill">Docker</li>
+              <li class="skill">Kubernetes</li>
+              <li class="skill">Git</li>
+              <li class="skill">MPI</li>
+              <li class="skill">GNU-Linux</li>
+              <li class="skill">Windows</li>
+              <li class="skill">MacOS</li>
+              <li class="skill">Scrum</li>
+              <li class="skill">Jira</li>
+              <li class="skill">Klocwork</li>
+              <li class="skill">HTML</li>
+              <li class="skill">CSS</li>
+              <li class="skill">Java Script</li>
+              <li class="skill">PHP</li>
+              <li class="skill">MySQL</li>
+              <li class="skill">Wordpress</li>
+              <li class="skill">AngularJs</li>
+              <li class="skill">Circuit Design & Analysis</li>
+              <li class="skill">Arduino Prototyping</li>
+              <li class="skill">Raspberry Pi Prototyping</li>
+              <li class="skill">Problem Solving</li>
+              <li class="skill">Leadership</li>
+              <li class="skill">Multidisciplinary TW</li>
+              <li class="skill">Oration</li>
+            </ul>
+          </div>
       </div>
     </div>
-  </div>
-  <footer>
-    <div id="Contact">
-      <div>
-        <h1 class=headers>
-        Contact
-        </h1>
-        <h3>
-        <p class="cite">"The meeting of two personalities is like the contact of two chemical substances: if there is any reaction, both are transformed."<br>
-        -Carl Jung</p>
-        </h3>
+    <footer>
+      <div id="Contact">
+        <div>
+          <h1 class="headers">
+            Contact
+          </h1>
+          <h3>
+            <p class="cite">
+              "The meeting of two personalities is like the contact of two
+              chemical substances: if there is any reaction, both are
+              transformed."<br />
+              -Carl Jung
+            </p>
+          </h3>
+        </div>
+        <hr />
+        <div id="socialIcons">
+          <ul>
+            <li>
+              <a
+                href="https://twitter.com/malkam03"
+                title="Twitter"
+                id="twitterIcon"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/Malcolm.Davis.Steele"
+                title="Facebook"
+                id="facebookIcon"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/MalcolmDS"
+                title="LinkedIn"
+                id="linkedInIcon"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/malkam03"
+                title="Github"
+                id="gitHubIcon"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="mailto:me@malcolmdavis.xyz"
+                title="Email"
+                id="emailIcon"
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <hr>
-      <div id="socialIcons">
-        <ul>
-          <li>
-            <a href="https://twitter.com/malkam03" title="Twitter" id="twitterIcon"></a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/Malcolm.Davis.Steele" title="Facebook" id="facebookIcon"></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/MalcolmDS" title="LinkedIn" id="linkedInIcon"></a>
-          </li>
-          <li>
-            <a href="https://github.com/malkam03" title="Github" id="gitHubIcon"></a>
-          </li>
-          <li>
-            <a href="mailto:me@malcolmdavis.xyz" title="Email" id="emailIcon"></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>

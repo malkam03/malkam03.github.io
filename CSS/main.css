@@ -1,92 +1,98 @@
 :root {
-  --mainColor: #D64550;
-  --secondaryColor: #DBDAD6;
-  --tertiaryColor: #DBDAD6;
+  --mainColor: #d64550;
+  --secondaryColor: #dbdad6;
+  --tertiaryColor: #dbdad6;
   --mainBackColor: white;
   --regularTextColor: grey;
+  --titleFont: "Share Tech", sans-serif;
+  --textFont: "Open Sans";
 }
 
-#navigationBar {
-  height: 5vh;
+/*
+  Animations
+ */
+@keyframes glowing {
+  0% {
+    background-color: var(--secondaryColor);
+    box-shadow: 0 0 5px var(--secondaryColor);
+  }
+  50% {
+    background-color: var(--mainColor);
+    box-shadow: 0 0 20px var(--mainColor);
+  }
+  100% {
+    background-color: var(--secondaryColor);
+    box-shadow: 0 0 5px var(--secondaryColor);
+  }
 }
 
-#navigationBar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-#navigationBar ul li {
-  float: right;
-}
-
-#navigationBar ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-#navigationBar ul li a:hover {
-  background-color: #111;
-}
-
-
-
+/*
+ Header part
+ */
 header {
-  background: url("../images/HeaderBack.png") no-repeat no-repeat center center;
+  height: 100vh;
+}
+
+.headerSlides {
+  display: none;
+  height: 100vh;
+  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
   position: relative;
-  height: 100vh;
   background-size: cover;
   border: 0;
   color: white;
-/*  color: #FC5F5F;*/
 }
 
 #headerDiv {
-  height: 95vh;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 10vh;
 }
 
 #headerTitle {
   min-width: 325px;
-  font-family: "Press Start 2P", cursive;
-  font-size: 90%;
+  font-family: var(--titleFont);
+  font-size: 150%;
   text-align: center;
 }
 
 #headerTitle h2 {
-  font-family: 'Open Sans';
+  border: 1px solid var(--mainColor);
+  background-color: var(--mainColor);
+  font-size: 120%;
 }
 
+/*
+  Side menu part
+  */
 .sideMenu {
   position: -webkit-sticky;
   position: sticky;
   width: 10vw;
   top: 10vh;
-  z-index: 3;
+  z-index: 4;
   float: right;
-  font-family: 'Open Sans';
+  font-family: var(--textFont);
   margin-left: -20vw;
 }
 
 #sideMenuHome {
-    position: absolute;
-    bottom: 0;
-    top: unset;
-    right: 0;
-    margin: 0;
-    height: 66px;
+  position: absolute;
+  bottom: 0;
+  top: unset;
+  right: 0;
+  margin: 0;
+  height: 66px;
+}
+
+#sideMenuMore {
+  animation: glowing 1300ms infinite;
 }
 
 .sideMenu ul {
@@ -96,6 +102,10 @@ header {
   min-width: 120px;
   max-width: 10%;
   overflow: hidden;
+}
+
+.active a {
+  animation: glowing 3000ms infinite;
 }
 
 .sideMenu ul li {
@@ -118,11 +128,13 @@ header {
   background-color: var(--mainColor);
 }
 
-
+/*
+ Body sections
+ */
 body {
   background-color: var(--secondaryColor);
-  font-family: 'Open Sans', regular;
-  margin:0;
+  font-family: var(--textFont), regular;
+  margin: 0;
   color: var(--regularTextColor);
   overflow-x: hidden;
 }
@@ -136,15 +148,31 @@ body {
   margin-bottom: 3%;
 }
 
-
-
 #profilePic {
   border-radius: 50%;
-  height: 22vw;
-  width: 22vw;
+  height: 35vw;
+  width: 35vw;
   border: 10px solid var(--secondaryColor);
 }
 
+#downloadResume {
+  background-color: var(--mainColor);
+  color: var(--mainBackColor);
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  float: right;
+  animation: glowing 1300ms infinite;
+  cursor: pointer;
+}
+
+#downloadResume:hover {
+  background-color: var(--secondaryColor);
+  animation: none;
+}
 
 #projectGallery {
   width: 100%;
@@ -152,14 +180,14 @@ body {
   padding: 5px 6%;
 }
 
-#projectGallery div:hover{
+#projectGallery div:hover {
   z-index: 1;
 }
 
 .projectDataContainer {
   position: relative;
   float: left;
-  padding: 5px;
+  margin: 1.5%;
   width: 20vw;
 }
 
@@ -168,13 +196,13 @@ body {
   height: auto;
   display: block;
   width: 20vw;
-  transition: .5s ease;
+  transition: 0.5s ease;
   backface-visibility: hidden;
 }
 
 .projectDataContainer:hover .projectImage {
-  transform: scale(1.5,1.5);
-  transition: .3s transform;
+  transform: scale(1.5, 1.5);
+  transition: 0.3s transform;
 }
 
 .projectData {
@@ -182,7 +210,7 @@ body {
   height: 100%;
   border-radius: 50%;
   background-color: grey;
-  transition: .5s ease;
+  transition: 0.5s ease;
   opacity: 0;
   position: absolute;
   transform: translateY(-100%);
@@ -206,8 +234,9 @@ body {
 }
 
 .projectHeader {
-  font-family: "Press Start 2P", cursive;
+  font-family: var(--titleFont);
   color: white;
+  font-size: 120%;
 }
 
 .projectDataContainer:hover .projectData {
@@ -215,44 +244,24 @@ body {
   color: white;
 }
 
-.skillEntry {
-  margin-bottom: 5px;
+#Skills {
+  min-height: 70vh;
 }
 
-.skillEntry:hover {
-  background-color: rgb(219, 218, 214);
-  background-color: rgba(219, 218, 214,1);
-}
-.skillText {
-  width: 70%;
-}
-
-.rating {
-  float:right;
-}
-
-
-.skillRating span {
-  width: 16px;
-  height: 16px;
-  display: inline-block;
-  vertical-align: middle;
+.skill {
+  list-style-type: none;
+  position: relative;
+  float: left;
+  background-color: var(--mainColor);
+  border-radius: 10%;
+  color: white;
+  padding: 1%;
+  margin: 0.3% 0.5%;
+  color: var(--mainBackColor);
 }
 
-.skillEntry:hover .skillRating span{
-  margin-left: 2px;
-}
-
-.fillSkill {
-  background: url('../images/icons/1up.png');
-}
-
-.noSkill {
-  background: url('../images/icons/1upG.png');
-}
-
-.halfSkill {
-  background: url('../images/icons/1upHG.png');
+.skill:hover {
+  background-color: var(--secondaryColor);
 }
 
 footer {
@@ -265,23 +274,22 @@ footer {
 }
 
 .mainContent {
-    min-width: 325px;
-    max-width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
+  min-width: 325px;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
 }
 
 .dataBlock {
-    width: 75%;
-    min-height: 50vh;
-    margin-bottom: 2%;
-    margin-top: 2%;
-    display: block;
+  width: 75%;
+  min-height: 50vh;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  display: block;
 }
-
 
 .primaryBack {
   width: 100%;
@@ -295,7 +303,6 @@ footer {
   padding-bottom: 50px;
 }
 
-
 .secondaryBack {
   width: 100%;
   min-height: 100vh;
@@ -307,19 +314,21 @@ footer {
   padding-bottom: 50px;
 }
 
-.headers{
+.headers {
   color: var(--mainColor);
-  font-family: "Press Start 2P";
+  font-family: var(--titleFont);
+  font-size: 250%;
   text-align: center;
 }
 
 .header2 {
   color: var(--mainColor);
-  font-family: "Press Start 2P";
+  font-family: var(--titleFont);
+  font-size: 200%;
 }
 
 .cite {
-  font-family: 'Open Sans';
+  font-family: var(--textFont);
   font-style: italic;
   text-align: center;
 }
@@ -329,14 +338,22 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
 }
 
-.lAlign {
-  text-align: left;
+.rAlign {
+  text-align: justify;
 }
 
 .columns div {
-  width: 23vw;
+  flex-grow: 1;
+}
+
+.detail {
+  display: inline-block;
+  display: -moz-inline-box;
+  zoom: 1;
+  width: 33%;
 }
 
 .colhalf {
@@ -363,7 +380,7 @@ footer {
   margin: 1px;
   width: 30%;
   display: inline-block;
-  vertical-align:top;
+  vertical-align: top;
 }
 
 .col1-4 h4 {
@@ -405,11 +422,12 @@ footer {
   margin-bottom: 50px;
 }
 
-#Contact h1{
-  font-family: "Press Start 2P", cursive;
+#Contact h1 {
+  font-family: var(--titleFont);
+  font-size: 250%;
   color: white;
 }
-#Contact hr{
+#Contact hr {
   width: 70vw;
 }
 
@@ -444,7 +462,7 @@ footer {
 #twitterIcon,
 #facebookIcon,
 #linkedInIcon {
-  background: url('../images/icons/social-icons.png') -74px 0px;
+  background: url("../images/icons/social-icons.png") -74px 0px;
 }
 
 #twitterIcon:hover,
@@ -462,22 +480,20 @@ footer {
 }
 
 #gitHubIcon {
-  background: url('../images/icons/github.png');
+  background: url("../images/icons/github.png");
 }
 
 #gitHubIcon:hover {
-  background: url('../images/icons/githubh.png');
+  background: url("../images/icons/githubh.png");
 }
 
 #emailIcon {
-  background: url('../images/icons/email.png');
+  background: url("../images/icons/email.png");
 }
 
 #emailIcon:hover {
-  background: url('../images/icons/emailh.png');
+  background: url("../images/icons/emailh.png");
 }
-
-
 
 .img-circle {
   border-radius: 50%;
@@ -485,18 +501,40 @@ footer {
   margin-right: 5%;
 }
 
-#Activities #slider h2 {
-  font-family: "Press Start 2P", cursive;
+#Activities {
+  height: 100vh;
+  width: 100%;
+}
+
+.activitiesSlides {
+  display: none;
+  height: 100vh;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  position: relative;
+  background-size: cover;
+  border: 0;
+  color: white;
+}
+
+.sliderContent {
+  padding-top: 5vh;
+}
+
+.sliderHeader {
+  font-family: var(--titleFont);
   font-size: 150%;
-  padding-top:230px;
+  padding-top: 25vh;
   color: #fff;
   text-align: center;
   z-index: 3;
   position: relative;
 }
 
-#Activities #slider p {
-  font-family: "Open Sans";
+.sliderPara {
+  font-family: var(--textFont);
   color: #fff;
   text-align: center;
   z-index: 3;
@@ -505,43 +543,32 @@ footer {
   width: 60%;
 }
 
-#slider
-{
-  height: 600px;
-  background-image:url('../images/activities/Activity-1.jpg');
-  background-position: center; 
+#slider {
+  background-position: center;
+  height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  -webkit-transition: background 1s;
-}
-
-#slider:after
-{
+  background-attachment: fixed;
   position: relative;
-  content: '';
-  top: 0;
-  left: 0;
-  width: 100%;
-  max-height: 600px;
-  z-index:1;
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+  border: 0;
 }
 
-.icon
-{
+.icon {
   font-size: 50px;
   color: #fff;
   position: relative;
   z-index: 3;
 }
 
-#ileft
-{
+#ileft {
   float: left;
   margin: 0 30px;
 }
 
-#iright
-{
+#iright {
   float: right;
+  z-index: 5;
   margin: 0 30px;
 }
