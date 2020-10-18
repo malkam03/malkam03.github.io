@@ -195,7 +195,7 @@ body {
   border-radius: 50%;
   height: auto;
   display: block;
-  width: 20vw;
+  width: 100%;
   transition: 0.5s ease;
   backface-visibility: hidden;
 }
@@ -571,4 +571,107 @@ footer {
   float: right;
   z-index: 5;
   margin: 0 30px;
+}
+
+/**
+ * Mobile view
+ **/
+
+@media only screen and (max-width: 815px) {
+  .sideMenu {
+    visibility: hidden;
+  }
+  .columns {
+    display: inline-block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+  .img-circle {
+    border-radius: 50%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  #profilePic {
+    border-radius: 50%;
+    height: 40vw;
+    width: 40vw;
+    border: 10px solid var(--secondaryColor);
+  }
+  #headerDiv {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20vh;
+  }
+  .columns div {
+    flex-grow: 1;
+    width: 80vw;
+  }
+  #downloadResume {
+    background-color: var(--mainColor);
+    color: var(--mainBackColor);
+    border: none;
+    margin-top: 2vh;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    float: none;
+    animation: glowing 1300ms infinite;
+    cursor: pointer;
+    width: 60vw;
+  }
+  .primaryBack {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    background: var(--mainBackColor);
+    padding-bottom: 2vh;
+  }
+  .col1-4 {
+    margin: 10% 0 2%;
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .col3-4 {
+    margin-left: 10%;
+    width: 100%;
+    display: inline-block;
+  }
+  .projectDataContainer {
+    position: relative;
+    float: left;
+    margin: 1.5%;
+    width: 30vw;
+  }
+  .projectData p {
+    display: none;
+  }
+  #socialIcons ul li {
+    margin: 0;
+    height: 34px;
+    line-height: 50px;
+    list-style-type: none;
+    display: inline-block;
+    background: #fff;
+    border-radius: 71px;
+    padding: 10px;
+    border: 1px solid #888;
+  }
+  #Contact {
+    min-width: 100vw;
+    max-height: 300px;
+    text-align: center;
+    color: #b3b3b3;
+    margin-bottom: 50px;
+  }
 }
